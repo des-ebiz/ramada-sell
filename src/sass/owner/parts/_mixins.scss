@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "./variables";
+
+// common
+@mixin centerThis($width: 1000px) {
+	position: relative;
+	box-sizing: border-box;
+	width: $width;
+	margin: 0 auto;
+}
+@mixin bx($type: border-box) {
+	position: relative;
+	box-sizing: $type;
+}
+@mixin clearfix {
+	&::before, &::after {
+		content: '';
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+	.lt-ie8 & {
+		zoom: 1;
+	}
+}
+// float
+@mixin float($l: left) {
+	position: relative;
+	float: $l;
+}
+// absolute
+@mixin absolute-tl($t : auto, $l : auto, $wd : 0) {
+	position: absolute;
+	top : $t;
+	left : $l;
+    margin-left: -($wd/2);
+}
+
+// btn base
+@mixin btn-com($wd : null, $he : null, $f-s : null, $bd-r : null, $btn-bg : null) {
+    position: relative;
+    display: inline-block;
+    width: $wd;
+    height: $he;
+    font-size: $f-s;
+    text-align: center;
+    line-height: $he;
+    color: #fff;
+    border-radius: $bd-r;
+    background: $btn-bg;
+}
+
+// menu : before content
+@mixin con-line($wd : null, $he : null, $t : 0, $l : 0, $bg : null) {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $wd;
+    height: $he;
+    top: $t;
+    left: $l;
+    margin-top: -($he/2);
+    background: $bg;
+}
+
+

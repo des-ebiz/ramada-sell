@@ -1,0 +1,201 @@
+@charset "utf-8";
+// reset common.css 에만
+@import "reset";
+// 페이지 공통 common
+@import "parts/common";
+
+/* common */
+body {
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    font-family: $font-ntss;
+}
+
+/* header */
+.header {
+    .top-area {
+        position: relative;
+        padding: 73px 0 23px;
+        background: #fff;
+        .logo {
+            @include absolute-tl(23px, 50%, 135px);
+            width: 135px;
+            a {
+                display: inline-block;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .until-box {
+            @include centerThis;
+            @include clearfix;
+            //left
+            .l-box {
+                @include float;
+                .btn-link {
+                    @include btn-com(154px, 32px, 12px, $bd-r-10, $bg-gold-1);
+                    @include absolute-tl(-45px, 0, 0);
+                    letter-spacing: 0;
+                }
+                .tell-txt {
+                    span {
+                        margin-left: 36px;
+                        color: $fg-gray-1;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            //right
+            .r-box {
+                @include float(right);
+                .until-menu {
+                    li {
+                        @include float;
+                        padding: 0 12px 0 8px;
+                        color: $fg-gray-1;
+                        &:before {
+                            @include con-line(1px, 14px, 50%, 0, $bg-gray-1);
+                        }
+                        &:first-child:before {
+                            content: none;
+                        }
+                        a {
+                            &:hover {
+                                color: $fg-gray-2;
+                            }
+                        }
+                    }
+                    .li-st {
+                        color: $fg-red-1;
+                        font-weight: 600;
+                        a {
+                            &:hover {
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //gnb area
+    .gnb {
+        @include bx;
+        z-index: 99;
+        background: $bg-red-1;
+        .menu {
+            @include centerThis;
+            @include clearfix;
+            li[class*='item-'] {
+                @include float;
+                width: (100%/5);
+                text-align: center;
+                a {
+                    @include bx;
+                    display: block;
+                }
+                > a {
+                    font-size: 17px;
+                    line-height: 60px;
+                    color: #fff;
+                    &:before {
+                        @include con-line(1px, 14px, 50%, -1px, #9a3232);
+                    }
+                }
+                &:first-child {
+                    > a {
+                         &:before {
+                            content: none;
+                        }
+                    }
+                }
+                .sub-menu {
+                    z-index: 999;
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    padding: 16px 0;
+                    text-align: center;
+                    background: #eae6e1;
+                    li {
+                        a {
+                            padding: 0 20px;
+                            font-size: 16px;
+                            line-height: 52px;
+                            color: $fg-gray-2;
+                            //border-top: 1px solid #a3a2a1;
+                            span {
+                                display: block;
+                                letter-spacing: -1px;
+                                border-top: 1px solid #a3a2a1;
+                            }
+                        }
+                        
+                        &:first-child {
+                            a {
+                                span {
+                                    border-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* footer */
+#footer {
+    padding: 50px 0px 45px 0px;
+    background: #fff;
+    * {
+        font-size: 15px !important; 
+        line-height: 20px !important; 
+        color: #b8b8b8;
+    }
+    .left_area {
+        .row {
+            .logo_f_main {
+                display: inline-block;
+            }
+            .logo_f {
+                display: none;
+            }
+            a.privacyBtn {
+                background: #f4f4f4;
+                color: #a1a1a1;
+            }
+        }
+    }
+    .right_area {
+        width: auto;
+        .row {
+            .s_1 {
+                color: #555;
+                &:first-child {
+                    color: #727272;
+                }
+            }
+        }
+    }
+    small {
+        margin-top: 0;
+    }
+}
+/* 이용약관 */
+.privacy-bg {
+    .cm-s {
+        .d-top{
+            background: #353535;
+        }
+    }
+}

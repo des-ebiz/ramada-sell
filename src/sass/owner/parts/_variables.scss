@@ -1,0 +1,31 @@
+@charset "utf-8";
+// --------------
+// Scss변수
+// --------------
+$font-stack: "Nanum Gothic", Dotum, Sans-serif;
+$font-ntss: "Noto Sans KR", Sans-serif;
+
+/* border-radius */
+//버튼 라운드
+$bd-r-0 : 0px;
+$bd-r-10 : 10px;
+
+/* bg-color */
+$bg-gold-1: #d2a564; //버튼 컬러1
+
+$bg-black-1: #353535; //버튼 컬러2
+
+$bg-gray-1: #8a8a8a;
+
+//메뉴 bg
+$bg-red-1: #810000;
+
+/* font-color */
+$fg-gray-1: #8a8a8a; //until 기본
+$fg-gray-2: #353535;
+
+$fg-red-1: #810000; //until 강조
+
+
+
+
