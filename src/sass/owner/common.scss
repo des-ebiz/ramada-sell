@@ -118,7 +118,7 @@ body {
                 }
                 .sub-menu {
                     z-index: 999;
-                    display: block;
+                    display: none;
                     position: absolute;
                     width: 100%;
                     padding: 16px 0;
@@ -126,12 +126,12 @@ body {
                     background: #eae6e1;
                     li {
                         a {
-                            padding: 0 20px;
+                            padding: 0 15px;
                             font-size: 16px;
                             line-height: 52px;
                             color: $fg-gray-2;
-                            //border-top: 1px solid #a3a2a1;
                             span {
+                                @include bx;
                                 display: block;
                                 letter-spacing: -1px;
                                 border-top: 1px solid #a3a2a1;
