@@ -1,0 +1,251 @@
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+/*
+* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/NotoSansKR-Thin.woff2) format("woff2"), url(../font/NotoSansKR-Thin.woff) format("woff"), url(../font/NotoSansKR-Thin.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/NotoSansKR-Light.woff2) format("woff2"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/NotoSansKR-Regular.woff2) format("woff2"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../font/NotoSansKR-Medium.woff2) format("woff2"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NotoSansKR-Bold.woff2) format("woff2"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
+
+.contents .container {
+  padding: 70px 0 95px; }
+  .contents .container .con-area {
+    margin-top: 60px; }
+    .contents .container .con-area .join-area {
+      border-top: 1px solid #bcbcbc;
+      border-bottom: 1px solid #bcbcbc; }
+      .contents .container .con-area .join-area .join-form-box {
+        padding: 45px 0 45px; }
+        .contents .container .con-area .join-area .join-form-box:before, .contents .container .con-area .join-area .join-form-box:after {
+          content: '';
+          display: table;
+          clear: both; }
+        .lt-ie8 .contents .container .con-area .join-area .join-form-box {
+          zoom: 1; }
+        .contents .container .con-area .join-area .join-form-box + .join-form-box {
+          border-top: 1px solid #bcbcbc;
+          border-bottom: 0 solid #bcbcbc; }
+        .contents .container .con-area .join-area .join-form-box .join-form-tit {
+          float: left;
+          width: 25%;
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 1;
+          color: #353535; }
+          .contents .container .con-area .join-area .join-form-box .join-form-tit span {
+            display: inline-block;
+            font-weight: inherit;
+            margin-right: 10px; }
+        .contents .container .con-area .join-area .join-form-box .form-box {
+          float: left;
+          width: 75%; }
+          .contents .container .con-area .join-area .join-form-box .form-box .row {
+            position: relative;
+            box-sizing: border-box;
+            display: table;
+            width: 100%;
+            margin-top: 14px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row:first-child {
+              margin-top: 0; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .lbl, .contents .container .con-area .join-area .join-form-box .form-box .row .in-txt, .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] {
+              position: relative;
+              box-sizing: border-box;
+              display: table-cell;
+              height: 40px;
+              font-size: 17px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .lbl {
+              position: relative;
+              box-sizing: border-box;
+              padding-left: 14px;
+              cursor: default;
+              width: 125px;
+              font-weight: 500;
+              vertical-align: top;
+              line-height: 40px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row .lbl:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 19px;
+                left: 0;
+                border-radius: 50%;
+                background: #d2a564; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .in-txt {
+              width: 100%;
+              font-size: 17px;
+              font-weight: 400;
+              line-height: 40px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .btn-sel {
+              height: 40px;
+              font-size: 17px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .lbl.lw-1 {
+              width: 130px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt {
+              display: inline-block; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-1 {
+                width: 382px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-2 {
+                width: 230px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-3 {
+                width: 122px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-4 {
+                width: 250px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-half {
+                width: 48.8%; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .in-txt.w-half + .w-half {
+                float: right; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .btn-form {
+              position: relative;
+              box-sizing: border-box;
+              display: inline-block;
+              width: 140px;
+              height: 40px;
+              font-size: 17px;
+              text-align: center;
+              line-height: 40px;
+              color: #fff;
+              border: 0px solid none;
+              border-radius: 0px;
+              background: #353535;
+              margin-left: 9px;
+              vertical-align: middle; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'] .btn-form.file {
+                width: 95px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].adr-box .w-half {
+              margin-top: 13px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .in-txt[type="file"] {
+              position: absolute;
+              overflow: hidden;
+              width: 0px;
+              height: 0px;
+              margin: -1px;
+              padding: 0; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .upload-name {
+              width: 510px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .upload-name.wd-2 {
+                width: 705px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt {
+              padding: 0 0 0 125px;
+              font-size: 15px;
+              line-height: 20px;
+              color: #292929; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt:before, .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt:after {
+                content: '';
+                display: table;
+                clear: both; }
+              .lt-ie8 .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt {
+                zoom: 1; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-row {
+              display: table-cell; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-row .s-1 {
+                padding: 0 25px 0 2px;
+                letter-spacing: -1px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-box {
+              display: table;
+              margin-bottom: 10px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-txt {
+              color: #909090; }
+          .contents .container .con-area .join-area .join-form-box .form-box .btn-more {
+            position: absolute;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 66px;
+            height: 40px;
+            font-size: 17px;
+            text-align: center;
+            line-height: 40px;
+            color: #292929;
+            border: 1px solid #353535;
+            border-radius: 0px;
+            background: #fff;
+            top: 0;
+            right: 0;
+            padding-left: 5px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .btn-more span {
+              position: relative;
+              display: inline-block;
+              margin-right: 10px;
+              width: 1px;
+              height: 12px;
+              background: #4d4d4d; }
+              .contents .container .con-area .join-area .join-form-box .form-box .btn-more span:before {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 1px;
+                top: 5px;
+                left: -6px;
+                background: #4d4d4d; }
+    .contents .container .con-area .info-box .d-chk {
+      margin-bottom: 16px; }
+    .contents .container .con-area .btn-box {
+      margin-top: 36px; }
+    .contents .container .con-area.join-end .join-area {
+      padding: 55px 0 56px;
+      text-align: center; }
+      .contents .container .con-area.join-end .join-area .join-end-txt {
+        font-size: 35px;
+        line-height: 50px; }
+        .contents .container .con-area.join-end .join-area .join-end-txt em {
+          display: block;
+          font-weight: 600; }
+        .contents .container .con-area.join-end .join-area .join-end-txt span {
+          font-weight: 600;
+          color: #810000; }
+    .contents .container .con-area.join-end .info-box > p {
+      color: #676666; }
+    .contents .container .con-area.join-end .btn-box {
+      margin-top: 80px; }
+      .contents .container .con-area.join-end .btn-box .btn-com {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 290px;
+        height: 70px;
+        font-size: 19px;
+        text-align: center;
+        line-height: 70px;
+        color: #fff;
+        border: 0px solid none;
+        border-radius: 10px;
+        background: #d2a564; }

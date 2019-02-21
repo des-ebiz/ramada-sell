@@ -1,9 +1,11 @@
 /* border-radius */
-/* bg-color */
-/* font-color */
+/* bg color */
+/* border color */
+/* font color */
 /* border-radius */
-/* bg-color */
-/* font-color */
+/* bg color */
+/* border color */
+/* font color */
 /*
 * Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
  */
@@ -42,3 +44,219 @@
   font-style: normal;
   font-weight: 900;
   src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
+
+.contents .main-sec {
+  padding: 100px 0;
+  background: url(http://img.ramadapt.co.kr/owenr/bg_main.jpg) no-repeat center;
+  background-size: cover; }
+  .contents .main-sec .main-area {
+    position: relative;
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    height: 585px;
+    background: url(http://img.ramadapt.co.kr/owenr/bg_main_con.jpg) no-repeat center;
+    background-size: 1000px auto; }
+    .contents .main-sec .main-area .main-box {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      top: 50%;
+      margin-top: -0; }
+      .contents .main-sec .main-area .main-box.login {
+        padding: 0 62px; }
+        .contents .main-sec .main-area .main-box.login .form-area {
+          padding-top: 46px; }
+          .contents .main-sec .main-area .main-box.login .form-area:before, .contents .main-sec .main-area .main-box.login .form-area:after {
+            content: '';
+            display: table;
+            clear: both; }
+          .lt-ie8 .contents .main-sec .main-area .main-box.login .form-area {
+            zoom: 1; }
+          .contents .main-sec .main-area .main-box.login .form-area .form-box {
+            display: table-cell;
+            width: 670px;
+            padding-right: 24px; }
+            .contents .main-sec .main-area .main-box.login .form-area .form-box .row {
+              position: relative;
+              box-sizing: border-box;
+              display: table;
+              width: 100%;
+              margin-top: 14px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row:first-child {
+                margin-top: 0; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .lbl, .contents .main-sec .main-area .main-box.login .form-area .form-box .row .in-txt, .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] {
+                position: relative;
+                box-sizing: border-box;
+                display: table-cell;
+                height: 51px;
+                font-size: 17px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .lbl {
+                position: relative;
+                box-sizing: border-box;
+                padding-left: 14px;
+                cursor: default;
+                width: 140px;
+                font-weight: 500;
+                vertical-align: top;
+                line-height: 51px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row .lbl:before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 5px;
+                  height: 5px;
+                  top: 23px;
+                  left: 0;
+                  border-radius: 50%;
+                  background: #d2a564; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .in-txt {
+                width: 100%;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 51px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .btn-sel {
+                height: 51px;
+                font-size: 17px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .lbl.lw-1 {
+                width: 130px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt {
+                display: inline-block; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-1 {
+                  width: 382px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-2 {
+                  width: 230px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-3 {
+                  width: 122px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-4 {
+                  width: 250px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-half {
+                  width: 48.8%; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .in-txt.w-half + .w-half {
+                  float: right; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .btn-form {
+                position: relative;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 140px;
+                height: 51px;
+                font-size: 17px;
+                text-align: center;
+                line-height: 51px;
+                color: #fff;
+                border: 0px solid none;
+                border-radius: 0px;
+                background: #353535;
+                margin-left: 9px;
+                vertical-align: middle; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'] .btn-form.file {
+                  width: 95px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].adr-box .w-half {
+                margin-top: 13px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .in-txt[type="file"] {
+                position: absolute;
+                overflow: hidden;
+                width: 0px;
+                height: 0px;
+                margin: -1px;
+                padding: 0; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .upload-name {
+                width: 510px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .upload-name.wd-2 {
+                  width: 705px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt {
+                padding: 0 0 0 140px;
+                font-size: 15px;
+                line-height: 20px;
+                color: #292929; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt:before, .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt:after {
+                  content: '';
+                  display: table;
+                  clear: both; }
+                .lt-ie8 .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt {
+                  zoom: 1; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-row {
+                display: table-cell; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-row .s-1 {
+                  padding: 0 25px 0 2px;
+                  letter-spacing: -1px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-box {
+                display: table;
+                margin-bottom: 10px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-txt {
+                color: #909090; }
+          .contents .main-sec .main-area .main-box.login .form-area .btn-login {
+            position: relative;
+            box-sizing: border-box;
+            display: table-cell;
+            width: 180px;
+            height: 100%;
+            font-size: 19px;
+            text-align: center;
+            line-height: 100%;
+            color: #fff;
+            border: 0px solid none;
+            border-radius: 10px;
+            background: #d2a564;
+            vertical-align: middle; }
+        .contents .main-sec .main-area .main-box.login .btn-sign {
+          position: relative;
+          box-sizing: border-box;
+          display: block;
+          width: 155px;
+          height: 36px;
+          font-size: 18px;
+          text-align: center;
+          line-height: 36px;
+          color: #666565;
+          border: 0px solid #bcbcbc;
+          border-radius: 0px;
+          background: #fff;
+          border-bottom-width: 1px;
+          margin: 45px auto 0; }
+          .contents .main-sec .main-area .main-box.login .btn-sign.ic-rArrow:after {
+            width: 8px;
+            height: 8px;
+            right: 0px;
+            border-color: #666565; }
+      .contents .main-sec .main-area .main-box.login-cm {
+        text-align: center; }
+        .contents .main-sec .main-area .main-box.login-cm p {
+          position: relative; }
+        .contents .main-sec .main-area .main-box.login-cm .p-1 {
+          padding-bottom: 34px;
+          font-size: 46px;
+          font-weight: 500;
+          line-height: 60px; }
+          .contents .main-sec .main-area .main-box.login-cm .p-1 span {
+            font-size: inherit;
+            font-weight: inherit; }
+          .contents .main-sec .main-area .main-box.login-cm .p-1 .cm-t-deco {
+            font-size: inherit;
+            font-weight: 600;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            background: #348483;
+            background: -webkit-linear-gradient(left, #355f6b 10%, #41aab1 45%, #2d696c 100%);
+            background: -o-linear-gradient(left, #355f6b 10%, #41aab1 45%, #2d696c 100%);
+            background: linear-gradient(to right, #355f6b 10%, #41aab1 45%, #2d696c 100%);
+            -webkit-background-clip: text;
+            background-clip: text; }
+          .contents .main-sec .main-area .main-box.login-cm .p-1:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -17px;
+            width: 35px;
+            height: 1px;
+            background: #545454; }
+        .contents .main-sec .main-area .main-box.login-cm .p-2 {
+          margin-top: 56px;
+          font-size: 15px;
+          line-height: 22px; }
+
+.ie .contents .con-sec .main-area .main-box .login-cm-box .p-1 .cm-t-deco {
+  background: none;
+  color: #348483; }

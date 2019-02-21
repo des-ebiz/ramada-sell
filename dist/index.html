@@ -6,7 +6,60 @@
 	<title>로딩 완료</title>
 </head>
 <body>
-	<h1><a href="./views/main/index.html">PC 페이지 이동</a></h1>
-	<!--<h1><a href="./views_m/main/index.html">MOBILE 페이지 이동</a></h1>-->
+	<!--<h1><a href="./views/main/index.html">PC 페이지 - 로그인 화면으로 이동</a></h1>-->
+	<style>
+        h2 {margin-top: 20px;}
+	    ol > li {margin-top: 10px;}
+        ol > li:first-child {margin-top: 0;}
+        ol > .ing a {color: #ddd;}
+	</style>
+	<h1>PC 페이지</h1>
+    <h2>상단</h2>
+    <ol>
+	    <li class="ing"><a href="#none">체인시설 할인예약</a></li>
+	    <li class="ing"><a href="#none">명의변경신청</a></li>
+	    <li class="ing"><a href="#none">회원정보수정</a></li>
+    </ol>
+    <h2>메뉴</h2>
+	<ol>
+	    <li>
+            메인페이지
+	        <ul>
+	            <li><a href="./views/main/index.html">로그인 화면</a></li>
+	            <li><a href="./views/main/index_2.html">로그인 완료화면</a></li>
+	        </ul>
+	    </li>
+	    <li class="ing">
+            <!--<a href="./views/book/index.html">통장등록</a>-->
+            <a href="#none">통장등록</a>
+	    </li>
+	    <li class="ing">
+            <a href="#none">사업자 등록증 안내서</a>
+	        <ul>
+	            <li><a href="#none">전자세금계산서</a></li>
+	            <li><a href="#none">전자세금계산서 전송메일</a></li>
+	        </ul>
+	    </li>
+	    <li class="ing"><a href="#none">수익금 확인</a></li>
+	    <li>
+            <a href="./views/board/index.html">공지사항</a>
+	        <ul>
+	            <li><a href="./views/board/index.html">공지사항</a> / <a href="./views/board/index_read.html">공지사항 상세보기</a></li>
+	            <li><a href="./views/board/index_2.html">FAQ</a></li>
+	            <li><a href="./views/board/index_3.html">문의사항</a> / <a href="./views/board/index_3_read.html">문의사항 상세보기</a> / <a href="./views/board/index_write.html">문의사항 글쓰기</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="./views/main/index.html">로그인 / 메인 로그인 화면</a></li>
+	</ol>
+    <h2>기타</h2>
+    <ol>
+	    <li>
+            회원가입
+	        <ul>
+	            <li><a href="./views/join/index.html">회원가입</a></li>
+	            <li><a href="./views/join/index_2.html">승인대기</a></li>
+	        </ul>
+	    </li>
+    </ol>
 </body>
 </html>

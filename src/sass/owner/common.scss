@@ -4,12 +4,59 @@
 // 페이지 공통 common
 @import "parts/common";
 
+/* 초기화 */
+input, select {-webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0;}
+select::-ms-expand {display: none;}
+
+/* label, input, select, textarea */
+// write textarea, input style 공통
+%write-in-style {
+    color: $fc-black-1;
+    border-radius: 1px;
+    border: 1px solid $bg-gray-5;
+    background: #fff;
+}
+/* input */
+input {
+    padding: 0 19px;
+    color: $fc-black-2;
+    vertical-align: middle;
+    
+    &:-webkit-input-placeholder, &:-ms-input-placeholder, &:placeholder {
+        color: $fc-gray-2;
+    }
+}
+.in-txt {
+    border-radius: 3px;
+    border: 2px solid $bg-gray-2;
+    background: $bg-gray-2;
+    &:focus {
+        //background: $bg-yellow-1;
+        border-color: $bc-gold-1;
+        outline: none;
+    }
+}
+.in-txt-2 {
+    @extend %write-in-style;
+    padding: 0 22px;
+}
+/* textarea */
+.ta-txt {
+    @extend %write-in-style;
+    @include bx;
+    resize: none;
+    width: 100%;
+    min-height: 375px;
+    padding: 24px 22px;
+}
+
 /* common */
 body {
     font-size: 15px;
     line-height: 1;
     letter-spacing: -0.5px;
     font-family: $font-ntss;
+    color: $fc-black-1;
 }
 
 /* header */
@@ -37,14 +84,14 @@ body {
             .l-box {
                 @include float;
                 .btn-link {
-                    @include btn-com(154px, 32px, 12px, $bd-r-10, $bg-gold-1);
+                    @include btn-com($dis : block, $wd : 154px, $he : 32px, $f-s : 12px);
                     @include absolute-tl(-45px, 0, 0);
                     letter-spacing: 0;
                 }
                 .tell-txt {
                     span {
                         margin-left: 36px;
-                        color: $fg-gray-1;
+                        color: $fc-gray-1;
                         &:first-child {
                             margin-left: 0;
                         }
@@ -58,21 +105,19 @@ body {
                     li {
                         @include float;
                         padding: 0 12px 0 8px;
-                        color: $fg-gray-1;
-                        &:before {
-                            @include con-line(1px, 14px, 50%, 0, $bg-gray-1);
-                        }
+                        color: $fc-gray-1;
+                        @include con-line(1px, 14px, 50%, 0, $bg-gray-1);
                         &:first-child:before {
                             content: none;
                         }
                         a {
                             &:hover {
-                                color: $fg-gray-2;
+                                color: $fc-black-2;
                             }
                         }
                     }
                     .li-st {
-                        color: $fg-red-1;
+                        color: $fc-red-1;
                         font-weight: 600;
                         a {
                             &:hover {
@@ -88,6 +133,7 @@ body {
     //gnb area
     .gnb {
         @include bx;
+        @include clearfix;
         z-index: 99;
         background: $bg-red-1;
         .menu {
@@ -105,9 +151,7 @@ body {
                     font-size: 17px;
                     line-height: 60px;
                     color: #fff;
-                    &:before {
-                        @include con-line(1px, 14px, 50%, -1px, #9a3232);
-                    }
+                    @include con-line(1px, 14px, 50%, -1px, #9a3232);
                 }
                 &:first-child {
                     > a {
@@ -129,7 +173,7 @@ body {
                             padding: 0 15px;
                             font-size: 16px;
                             line-height: 52px;
-                            color: $fg-gray-2;
+                            color: $fc-black-2;
                             span {
                                 @include bx;
                                 display: block;
@@ -152,11 +196,91 @@ body {
     }
 }
 
+/* contents */
+.contents {
+    position: relative;
+    
+    //공통
+    .con-tit {
+        font-size: 46px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1;
+    }
+    
+    //서브페이지 공통
+    .container {
+        
+        .con-area {
+            @include centerThis;
+
+            .info-box {
+                margin-top: 26px;
+                text-align: left;
+                font-size: 17px;
+                line-height: 30px;
+                .bul-txt {
+                    @include l-bul($t : 13px);
+                    em {
+                        color: $fc-red-1;
+                    }
+                    .info-list {
+                        margin-top: 5px;
+                    }
+                }
+
+                .d-chk {
+                    margin-top: 10px;
+
+                    > p {
+                        @include bx;
+                        @include chk-box;
+                    }
+
+                }
+            }
+
+            .btn-box {
+                @include clearfix;
+                text-align: center;
+                .left {
+                    float: left;
+                }
+                .right {
+                    float: right;
+                }
+                //공통 버튼 
+                .btn-gold {
+                    @include btn-com($wd : 294px, $he : 70px);
+                }
+            }
+        }
+    }
+}
+/* ie8 */
+.ie9 .contents, .ie8 .contents {
+    .container {
+        select[class*='sel-'] {
+            background-image: none !important;
+            &.sel-search {
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+/* safari */
+.safari input {
+    line-height: 1 !important;
+}
+.safari input[type=checkbox]:checked + label:before {
+    background: $bg-black-1 !important;
+}
 
 /* footer */
 #footer {
     padding: 50px 0px 45px 0px;
-    background: #fff;
+    background: #f0f0f0;
     * {
         font-size: 15px !important; 
         line-height: 20px !important; 

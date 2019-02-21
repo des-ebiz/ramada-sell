@@ -3,3 +3,123 @@
 // common
 @import "../parts/common";
 
+//page-main
+.contents {
+    .main-sec {
+        padding: 100px 0;
+        background: url(http://img.ramadapt.co.kr/owenr/bg_main.jpg) no-repeat center; background-size: cover;
+        .main-area {
+            @include centerThis;
+            height: 585px;
+            background: url(http://img.ramadapt.co.kr/owenr/bg_main_con.jpg) no-repeat center; background-size: 1000px auto;
+            
+            //세로정렬을 위한 기본 정의 css
+            .main-box {
+                position: absolute;
+                box-sizing: border-box;
+                width: 100%;
+                top: 50%; 
+                margin-top: -0;
+            
+                //로그인 화면
+                &.login {
+                    padding: 0 62px;
+                    .form-area {
+                        padding-top: 46px;
+                        @include clearfix;
+                        .form-box {
+                            @include form-base;
+                            display: table-cell;
+                            width: 670px;
+                            padding-right: 24px;
+                        }
+                        .btn-login {
+                            @include btn-com($dis : table-cell, $wd : 180px, $he : 100%);
+                            vertical-align: middle;
+                        }
+                    }
+                    //회원가입 버튼
+                    .btn-sign {
+                        @include btn-com($dis : block, $wd : 155px, $he : 36px, $f-s : 18px, $f-c : $fc-gray-6, $bd-c : $bc-gray-1, $bd-r : $bd-r-0, $btn-bg : #fff);
+                        border-bottom-width: 1px;
+                        margin: 45px auto 0;
+                        &.ic-rArrow {
+                            &:after {
+                                width: 8px;
+                                height: 8px;
+                                right: 0px;
+                                border-color: $fc-gray-6;
+                            }
+                        }
+                    }
+                }
+
+                //로그인 성공 화면
+                &.login-cm {
+                    text-align: center;
+                    p {
+                        position: relative;
+                    }
+                    .p-1 {
+                        padding-bottom: 34px;
+                        font-size: 46px;
+                        font-weight: 500;
+                        line-height: 60px;
+                        span {
+                            font-size: inherit;
+                            font-weight: inherit;
+                        }
+                        .cm-t-deco {
+                            font-size: inherit;
+                            font-weight: 600;
+                            @include txt-gradient(#348483, #355f6b 10%, #41aab1 45%, #2d696c 100%);
+                        }
+                        
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            margin-left: -17px;
+                            width: 35px;
+                            height: 1px;
+                            background: $bg-gray-4;
+                        }
+                    }
+                    .p-2 {
+                        margin-top: 56px;
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+//ie 일때
+.ie .contents {
+    .con-sec {
+        .main-area {
+            
+            //세로정렬을 위한 기본 정의 css
+            .main-box {
+            
+                //로그인 성공 화면
+                .login-cm-box {
+                    .p-1 {
+                        .cm-t-deco {
+                            background: none;
+                            color: #348483;
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}

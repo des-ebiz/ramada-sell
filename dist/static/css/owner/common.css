@@ -268,11 +268,13 @@ button[type=button] {
   display: none; }
 
 /* border-radius */
-/* bg-color */
-/* font-color */
+/* bg color */
+/* border color */
+/* font color */
 /* border-radius */
-/* bg-color */
-/* font-color */
+/* bg color */
+/* border color */
+/* font color */
 /*
 * Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
  */
@@ -312,12 +314,58 @@ button[type=button] {
   font-weight: 900;
   src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
 
+/* 초기화 */
+input, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0; }
+
+select::-ms-expand {
+  display: none; }
+
+/* label, input, select, textarea */
+.in-txt-2, .ta-txt {
+  color: #292929;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  background: #fff; }
+
+/* input */
+input {
+  padding: 0 19px;
+  color: #353535;
+  vertical-align: middle; }
+  input:-webkit-input-placeholder, input:-ms-input-placeholder, input:placeholder {
+    color: #909090; }
+
+.in-txt {
+  border-radius: 3px;
+  border: 2px solid #f4f4f4;
+  background: #f4f4f4; }
+  .in-txt:focus {
+    border-color: #d2a564;
+    outline: none; }
+
+.in-txt-2 {
+  padding: 0 22px; }
+
+/* textarea */
+.ta-txt {
+  position: relative;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  min-height: 375px;
+  padding: 24px 22px; }
+
 /* common */
 body {
   font-size: 15px;
   line-height: 1;
   letter-spacing: -0.5px;
-  font-family: "Noto Sans KR", Sans-serif; }
+  font-family: "Noto Sans KR", Sans-serif;
+  color: #292929; }
 
 /* header */
 .header .top-area {
@@ -340,10 +388,9 @@ body {
     box-sizing: border-box;
     width: 1000px;
     margin: 0 auto; }
-    .header .top-area .until-box::before, .header .top-area .until-box::after {
+    .header .top-area .until-box:before, .header .top-area .until-box:after {
       content: '';
-      display: table; }
-    .header .top-area .until-box::after {
+      display: table;
       clear: both; }
     .lt-ie8 .header .top-area .until-box {
       zoom: 1; }
@@ -352,13 +399,15 @@ body {
       float: left; }
       .header .top-area .until-box .l-box .btn-link {
         position: relative;
-        display: inline-block;
+        box-sizing: border-box;
+        display: block;
         width: 154px;
         height: 32px;
         font-size: 12px;
         text-align: center;
         line-height: 32px;
         color: #fff;
+        border: 0px solid none;
         border-radius: 10px;
         background: #d2a564;
         position: absolute;
@@ -404,15 +453,20 @@ body {
   box-sizing: border-box;
   z-index: 99;
   background: #810000; }
+  .header .gnb:before, .header .gnb:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .lt-ie8 .header .gnb {
+    zoom: 1; }
   .header .gnb .menu {
     position: relative;
     box-sizing: border-box;
     width: 1000px;
     margin: 0 auto; }
-    .header .gnb .menu::before, .header .gnb .menu::after {
+    .header .gnb .menu:before, .header .gnb .menu:after {
       content: '';
-      display: table; }
-    .header .gnb .menu::after {
+      display: table;
       clear: both; }
     .lt-ie8 .header .gnb .menu {
       zoom: 1; }
@@ -463,10 +517,124 @@ body {
         .header .gnb .menu li[class*='item-'] .sub-menu li:first-child a span {
           border-top: 0; }
 
+/* contents */
+.contents {
+  position: relative; }
+  .contents .con-tit {
+    font-size: 46px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1; }
+  .contents .container .con-area {
+    position: relative;
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto; }
+    .contents .container .con-area .info-box {
+      margin-top: 26px;
+      text-align: left;
+      font-size: 17px;
+      line-height: 30px; }
+      .contents .container .con-area .info-box .bul-txt {
+        position: relative;
+        box-sizing: border-box;
+        padding-left: 14px; }
+        .contents .container .con-area .info-box .bul-txt:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          top: 13px;
+          left: 0;
+          border-radius: 50%;
+          background: #d2a564; }
+        .contents .container .con-area .info-box .bul-txt em {
+          color: #810000; }
+        .contents .container .con-area .info-box .bul-txt .info-list {
+          margin-top: 5px; }
+      .contents .container .con-area .info-box .d-chk {
+        margin-top: 10px; }
+        .contents .container .con-area .info-box .d-chk > p {
+          position: relative;
+          box-sizing: border-box;
+          position: relative;
+          box-sizing: border-box;
+          overflow: hidden; }
+          .contents .container .con-area .info-box .d-chk > p input[type=checkbox] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            margin: -2px; }
+          .contents .container .con-area .info-box .d-chk > p label {
+            position: relative;
+            padding: 0 0 0 24px;
+            line-height: 16px; }
+          .contents .container .con-area .info-box .d-chk > p input[type=checkbox] + label:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            right: auto;
+            margin-top: -8px;
+            text-align: center;
+            line-height: 16px;
+            border: 1px solid #bcbcbc;
+            border-radius: 3px;
+            background: #fff; }
+          .contents .container .con-area .info-box .d-chk > p input[type=checkbox]:checked + label:before {
+            content: '\2714'; }
+          .contents .container .con-area .info-box .d-chk > p a[class*='btn-'] {
+            padding-left: 12px;
+            font-size: 15px;
+            font-weight: 300;
+            color: #646161; }
+    .contents .container .con-area .btn-box {
+      text-align: center; }
+      .contents .container .con-area .btn-box:before, .contents .container .con-area .btn-box:after {
+        content: '';
+        display: table;
+        clear: both; }
+      .lt-ie8 .contents .container .con-area .btn-box {
+        zoom: 1; }
+      .contents .container .con-area .btn-box .left {
+        float: left; }
+      .contents .container .con-area .btn-box .right {
+        float: right; }
+      .contents .container .con-area .btn-box .btn-gold {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 294px;
+        height: 70px;
+        font-size: 19px;
+        text-align: center;
+        line-height: 70px;
+        color: #fff;
+        border: 0px solid none;
+        border-radius: 10px;
+        background: #d2a564; }
+
+/* ie8 */
+.ie9 .contents .container select[class*='sel-'], .ie8 .contents .container select[class*='sel-'] {
+  background-image: none !important; }
+  .ie9 .contents .container select[class*='sel-'].sel-search, .ie8 .contents .container select[class*='sel-'].sel-search {
+    padding: 8px 0; }
+
+/* safari */
+.safari input {
+  line-height: 1 !important; }
+
+.safari input[type=checkbox]:checked + label:before {
+  background: #353535 !important; }
+
 /* footer */
 #footer {
   padding: 50px 0px 45px 0px;
-  background: #fff; }
+  background: #f0f0f0; }
   #footer * {
     font-size: 15px !important;
     line-height: 20px !important;

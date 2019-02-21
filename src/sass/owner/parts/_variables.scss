@@ -10,21 +10,46 @@ $font-ntss: "Noto Sans KR", Sans-serif;
 $bd-r-0 : 0px;
 $bd-r-10 : 10px;
 
-/* bg-color */
-$bg-gold-1: #d2a564; //버튼 컬러1
+/* bg color */
+$bg-gold-1: #d2a564;
 
-$bg-black-1: #353535; //버튼 컬러2
+$bg-black-1: #353535;
 
 $bg-gray-1: #8a8a8a;
+$bg-gray-2: #f4f4f4; //input bg color
+$bg-gray-3: #f8f8f8;
+$bg-gray-4: #545454;
+$bg-gray-5: #ccc;
+$bg-gray-6: #4d4d4d;
+
+$bg-yellow-1: #f9efe2; //input focus bg color
 
 //메뉴 bg
 $bg-red-1: #810000;
 
-/* font-color */
-$fg-gray-1: #8a8a8a; //until 기본
-$fg-gray-2: #353535;
+/* border color */
+$bc-gray-1: #bcbcbc;
+$bc-gray-2: #d7d6d6;
+$bc-gray-3: #dfdede;
+$bc-gray-4: #d9d9d9;
+$bc-gray-5: #717171; //btn 1
 
-$fg-red-1: #810000; //until 강조
+$bc-black-1: #353535;
+
+$bc-gold-1: #d2a564;
+
+/* font color */
+$fc-black-1: #292929; //font basic color
+$fc-black-2: #353535;
+
+$fc-gray-1: #8a8a8a; //until basic
+$fc-gray-2: #909090; //input txt color
+$fc-gray-3: #676666;
+$fc-gray-4: #a3a3a3;
+$fc-gray-5: #b0b0b0;
+$fc-gray-6: #666565; //btn 1
+
+$fc-red-1: #810000; //강조
 
 
 

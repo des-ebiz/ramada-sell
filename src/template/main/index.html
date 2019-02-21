@@ -8,8 +8,38 @@
 <div class="wrapper">
 	@@include('../include/_header.html')
 
-	<div class="contents" style="padding: 50px 20px; font-size: 20px; text-align: center; background: #f3f3f3">
-        내용입력
+	<div class="contents">
+        <section class="main-sec">
+            <div class="main-area">
+                <!-- 로그인 영역 -->
+                <div class="main-box login">
+                    <h2 class="con-tit">로그인</h2> 
+
+                    <div class="form-area">
+                        <div class="form-box">
+                            <div class="row">
+                                <label for="roomNum" class="lbl">계약호수</label>
+                                <input type="number" id="roomNum" class="in-txt" placeholder="계약호수를 입력해주세요.">
+                            </div>
+                            <div class="row">
+                                <label for="name" class="lbl">성명</label>
+                                <input type="text" id="name" class="in-txt" placeholder="성명을 입력해주세요.">
+                            </div>
+                            <div class="row">
+                                <label for="companyNum" class="lbl">사업자등록번호</label>
+                                <input type="tel" id="companyNum" class="in-txt" placeholder="사업자등록번호를 입력해주세요. (-포함) ">
+                            </div>
+                        </div>
+                        <a href="#none" class="btn-login">로그인</a>
+                    </div>
+
+                    <a href="../join/index.html" class="btn-sign ic-rArrow">수분양자 회원가입</a>
+                    
+                </div>
+                <!--//.main-box -->
+            </div>
+            <!--//.main-area -->
+        </section>
 	</div>
 	<!--//.contents-->    
 

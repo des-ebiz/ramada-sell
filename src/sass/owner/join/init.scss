@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+//page-join
+.contents {
+    .container {
+        padding: 70px 0 95px;
+        
+        .con-area {
+            margin-top: 60px;
+            .join-area {
+                @include b-tb;
+                
+                .join-form-box {
+                    @include clearfix;
+                    padding: 45px 0 45px;
+                    
+                    & + .join-form-box {
+                       @include b-tb($bb-w : 0); 
+                    }
+                    
+                    .join-form-tit {
+                        float: left;
+                        width: 25%;
+                        font-size: 26px;
+                        font-weight: 500;
+                        line-height: 1;
+                        color: $fc-black-2;
+                        span {
+                            display: inline-block;
+                            font-weight: inherit;
+                            margin-right: 10px;
+                        }
+                    }
+                    
+                    .form-box {
+                        float: left;
+                        width: 75%;
+                        @include form-base($t : 19px, $h : 40px, $l-wd : 125px);
+                        
+                        .btn-more {
+                            @include btn-com($po : absolute, $wd : 66px, $he : 40px, $f-s : 17px, $f-c : $fc-black-1, $bd-w : 1px, $bd-c : $bc-black-1, $bd-r : $bd-r-0, $btn-bg : #fff);
+                            top: 0;
+                            right: 0;
+                            @include btn-more;
+                        }
+                    }
+                }
+            }
+            
+            .info-box {
+                .d-chk {
+                    margin-bottom: 16px;
+                }
+            }
+            
+            .btn-box {
+                margin-top: 36px;
+            }
+            
+            //회원가입 승인대기
+            &.join-end {
+                .join-area {
+                    padding: 55px 0 56px;
+                    text-align: center;
+                    .join-end-txt {
+                        font-size: 35px;
+                        line-height: 50px;
+                        em {
+                            display: block;
+                            font-weight: 600;
+                        }
+                        span {
+                            font-weight: 600;
+                            color: $fc-red-1;
+                        }
+                    }
+                }
+                
+                .info-box {
+                    > p {
+                        color: $fc-gray-3;
+                    }
+                }
+                
+                .btn-box {
+                    margin-top: 80px;
+                    .btn-com {
+                        @include btn-com($wd : 290px, $he :  70px);
+                    }
+                }
+            }
+        }
+    }
+}
