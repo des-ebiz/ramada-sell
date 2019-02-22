@@ -553,45 +553,45 @@ body {
           color: #810000; }
         .contents .container .con-area .info-box .bul-txt .info-list {
           margin-top: 5px; }
-      .contents .container .con-area .info-box .d-chk {
-        margin-top: 10px; }
-        .contents .container .con-area .info-box .d-chk > p {
+    .contents .container .con-area .d-chk {
+      margin-top: 10px; }
+      .contents .container .con-area .d-chk > p {
+        position: relative;
+        box-sizing: border-box;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden; }
+        .contents .container .con-area .d-chk > p input[type=checkbox] {
+          position: absolute;
+          width: 0;
+          height: 0;
+          margin: -2px; }
+        .contents .container .con-area .d-chk > p label {
           position: relative;
-          box-sizing: border-box;
-          position: relative;
-          box-sizing: border-box;
-          overflow: hidden; }
-          .contents .container .con-area .info-box .d-chk > p input[type=checkbox] {
-            position: absolute;
-            width: 0;
-            height: 0;
-            margin: -2px; }
-          .contents .container .con-area .info-box .d-chk > p label {
-            position: relative;
-            padding: 0 0 0 24px;
-            line-height: 16px; }
-          .contents .container .con-area .info-box .d-chk > p input[type=checkbox] + label:before {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 16px;
-            height: 16px;
-            top: 50%;
-            left: 0;
-            right: auto;
-            margin-top: -8px;
-            text-align: center;
-            line-height: 16px;
-            border: 1px solid #bcbcbc;
-            border-radius: 3px;
-            background: #fff; }
-          .contents .container .con-area .info-box .d-chk > p input[type=checkbox]:checked + label:before {
-            content: '\2714'; }
-          .contents .container .con-area .info-box .d-chk > p a[class*='btn-'] {
-            padding-left: 12px;
-            font-size: 15px;
-            font-weight: 300;
-            color: #646161; }
+          padding: 0 0 0 24px;
+          line-height: 16px; }
+        .contents .container .con-area .d-chk > p input[type=checkbox] + label:before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 16px;
+          height: 16px;
+          top: 50%;
+          left: 0;
+          right: auto;
+          margin-top: -8px;
+          text-align: center;
+          line-height: 16px;
+          border: 1px solid #bcbcbc;
+          border-radius: 3px;
+          background: #fff; }
+        .contents .container .con-area .d-chk > p input[type=checkbox]:checked + label:before {
+          content: '\2714'; }
+        .contents .container .con-area .d-chk > p a[class*='btn-'] {
+          padding-left: 12px;
+          font-size: 15px;
+          font-weight: 300;
+          color: #646161; }
     .contents .container .con-area .btn-box {
       text-align: center; }
       .contents .container .con-area .btn-box:before, .contents .container .con-area .btn-box:after {
@@ -618,17 +618,31 @@ body {
         border-radius: 10px;
         background: #d2a564; }
 
-/* ie8 */
-.ie9 .contents .container select[class*='sel-'], .ie8 .contents .container select[class*='sel-'] {
+/* ie9/ie8 */
+.ie9 .contents select[class*='sel-'], .ie8 .contents select[class*='sel-'] {
   background-image: none !important; }
-  .ie9 .contents .container select[class*='sel-'].sel-search, .ie8 .contents .container select[class*='sel-'].sel-search {
+  .ie9 .contents select[class*='sel-'].sel-search, .ie8 .contents select[class*='sel-'].sel-search {
     padding: 8px 0; }
 
+/* ie8 */
+.ie8 .contents .container .con-area .d-chk > p input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 2px;
+  margin: 0;
+  margin-top: -8px;
+  border: 1px solid #bcbcbc;
+  background: #fff; }
+
+.ie8 .contents .container .con-area .d-chk > p input[type=checkbox] + label:before {
+  content: none; }
+
 /* safari */
-.safari input {
+.safari .contents input {
   line-height: 1 !important; }
 
-.safari input[type=checkbox]:checked + label:before {
+.safari .contents input[type=checkbox]:checked + label:before {
   background: #353535 !important; }
 
 /* footer */

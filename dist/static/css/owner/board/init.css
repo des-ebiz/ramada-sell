@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+/*
+* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/NotoSansKR-Thin.woff2) format("woff2"), url(../font/NotoSansKR-Thin.woff) format("woff"), url(../font/NotoSansKR-Thin.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/NotoSansKR-Light.woff2) format("woff2"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/NotoSansKR-Regular.woff2) format("woff2"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../font/NotoSansKR-Medium.woff2) format("woff2"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NotoSansKR-Bold.woff2) format("woff2"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
+
+.contents .container {
+  padding: 50px 0 80px;
+  /* sub content */
+  /* FAQ */
+  /* 문의사항 */ }
+  .contents .container .tab-area {
+    margin-bottom: 50px;
+    text-align: center; }
+    .contents .container .tab-area .tab-menu {
+      position: relative;
+      display: inline-block;
+      text-align: center; }
+      .contents .container .tab-area .tab-menu li {
+        position: relative;
+        float: left;
+        width: 220px; }
+        .contents .container .tab-area .tab-menu li a {
+          position: relative;
+          display: block;
+          padding: 15px 0;
+          font-size: 18px;
+          line-height: 18px;
+          color: #a3a3a3;
+          border-bottom: 1px solid #bcbcbc; }
+        .contents .container .tab-area .tab-menu li.on a {
+          color: #292929;
+          border-bottom: 2px solid #353535; }
+  .contents .container .board-sec .con-area {
+    margin-top: 45px; }
+    .contents .container .board-sec .con-area .search-area {
+      position: relative; }
+      .contents .container .board-sec .con-area .search-area:before, .contents .container .board-sec .con-area .search-area:after {
+        content: '';
+        display: table;
+        clear: both; }
+      .lt-ie8 .contents .container .board-sec .con-area .search-area {
+        zoom: 1; }
+      .contents .container .board-sec .con-area .search-area .search-box {
+        position: relative;
+        box-sizing: border-box;
+        float: right; }
+        .contents .container .board-sec .con-area .search-area .search-box .sel-search {
+          position: relative;
+          box-sizing: border-box;
+          text-align: left;
+          background: #fff url(http://img.ramadapt.co.kr/owenr/board/bg_arrow_b.png) no-repeat;
+          background-size: 24px auto;
+          background-position: right 13px;
+          display: inline-block;
+          width: 88px;
+          height: 36px;
+          padding-left: 11px;
+          line-height: 36px;
+          border: 1px solid #d7d6d6; }
+        .contents .container .board-sec .con-area .search-area .search-box .in-search {
+          display: inline-block;
+          width: 180px;
+          height: 36px;
+          margin: 0 7px;
+          padding: 0 11px;
+          border: 1px solid #d7d6d6; }
+        .contents .container .board-sec .con-area .search-area .search-box .btn-search {
+          position: relative;
+          box-sizing: border-box;
+          display: inline-block;
+          width: 80px;
+          height: 36px;
+          font-size: 15px;
+          text-align: center;
+          line-height: 36px;
+          color: #fff;
+          border: 0px solid none;
+          border-radius: 0px;
+          background: #353535; }
+    .contents .container .board-sec .con-area .table-col {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 42px; }
+      .contents .container .board-sec .con-area .table-col .table-style {
+        table-layout: fixed;
+        font-size: 15px;
+        line-height: 20px;
+        border-top: 2px solid #353535;
+        border-bottom: 1px solid #bcbcbc; }
+        .contents .container .board-sec .con-area .table-col .table-style thead tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
+          padding: 10px 0;
+          text-align: center; }
+        .contents .container .board-sec .con-area .table-col .table-style thead tr th {
+          font-weight: 500;
+          background: #f8f8f8; }
+        .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
+          border-top: 1px solid #bcbcbc;
+          word-break: keep-all; }
+          .contents .container .board-sec .con-area .table-col .table-style tbody tr td a {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: normal;
+            white-space: nowrap; }
+        .contents .container .board-sec .con-area .table-col .table-style .t-l {
+          padding-left: 13px;
+          padding-right: 13px;
+          text-align: left; }
+      .contents .container .board-sec .con-area .table-col colgroup col.nth-1 {
+        width: 8%; }
+      .contents .container .board-sec .con-area .table-col colgroup col.nth-2 {
+        width: 61%; }
+      .contents .container .board-sec .con-area .table-col colgroup col.nth-3 {
+        width: 10%; }
+      .contents .container .board-sec .con-area .table-col colgroup col.nth-4 {
+        width: 13%; }
+      .contents .container .board-sec .con-area .table-col colgroup col.nth-5 {
+        width: 8%; }
+      .contents .container .board-sec .con-area .table-col.read colgroup col.nth-1 {
+        width: 70%; }
+      .contents .container .board-sec .con-area .table-col.read colgroup col.nth-2 {
+        width: 15%; }
+      .contents .container .board-sec .con-area .table-col.read colgroup col.nth-3 {
+        width: 15%; }
+      .contents .container .board-sec .con-area .table-col.read thead tr th {
+        font-size: 16px;
+        font-weight: 400;
+        color: #939393; }
+        .contents .container .board-sec .con-area .table-col.read thead tr th.tit {
+          padding: 0 25px;
+          font-size: 19px;
+          text-align: left;
+          color: #292929; }
+      .contents .container .board-sec .con-area .table-col.read tbody tr td {
+        text-align: left;
+        line-height: 22px; }
+        .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down {
+          padding: 10px 25px 6px;
+          font-size: 16px; }
+          .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down p .btn-down {
+            display: inline-block;
+            padding-left: 40px;
+            background: url(http://img.ramadapt.co.kr/owenr/board/ico_down.png) no-repeat 0 center;
+            background-size: 18px auto; }
+            .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down p .btn-down span {
+              display: inline-block;
+              margin-right: 5px; }
+          .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down p + p {
+            margin-top: 7px; }
+        .contents .container .board-sec .con-area .table-col.read tbody tr td .t-txt {
+          box-sizing: border-box;
+          min-height: 220px;
+          padding: 35px 25px;
+          font-size: 19px;
+          color: #6d6d6d; }
+    .contents .container .board-sec .con-area .table-row {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      border-bottom: 1px solid #d9d9d9; }
+      .contents .container .board-sec .con-area .table-row .table-style {
+        table-layout: fixed;
+        font-size: 18px;
+        text-align: left;
+        border-top: 2px solid #353535; }
+        .contents .container .board-sec .con-area .table-row .table-style tr {
+          border-bottom: 1px solid #d9d9d9; }
+          .contents .container .board-sec .con-area .table-row .table-style tr th {
+            width: 145px;
+            background: #f8f8f8; }
+          .contents .container .board-sec .con-area .table-row .table-style tr td {
+            padding: 9px 0 9px 17px;
+            word-break: keep-all; }
+            .contents .container .board-sec .con-area .table-row .table-style tr td .in-txt-2, .contents .container .board-sec .con-area .table-row .table-style tr td .ta-txt {
+              font-size: 16px;
+              font-weight: 500; }
+            .contents .container .board-sec .con-area .table-row .table-style tr td .in-txt-2 {
+              height: 38px;
+              line-height: 38px; }
+      .contents .container .board-sec .con-area .table-row tr th {
+        text-align: center; }
+    .contents .container .board-sec .con-area .pagenation {
+      margin-top: 67px;
+      text-align: center;
+      font-size: 0; }
+      .contents .container .board-sec .con-area .pagenation a {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        font-size: 15px;
+        line-height: 28px;
+        vertical-align: middle;
+        color: #b0b0b0;
+        border: 1px solid #dfdede;
+        border-left: 0; }
+        .contents .container .board-sec .con-area .pagenation a.prev + a, .contents .container .board-sec .con-area .pagenation a.prev, .contents .container .board-sec .con-area .pagenation a.next {
+          border-left: 1px solid #dfdede; }
+        .contents .container .board-sec .con-area .pagenation a.prev {
+          margin-right: 30px; }
+        .contents .container .board-sec .con-area .pagenation a.next {
+          margin-left: 30px; }
+        .contents .container .board-sec .con-area .pagenation a:hover, .contents .container .board-sec .con-area .pagenation a.on {
+          color: #fff;
+          background: #353535; }
+    .contents .container .board-sec .con-area .btn-box {
+      margin-top: 36px; }
+      .contents .container .board-sec .con-area .btn-box .btn-com {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 120px;
+        height: 42px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 42px;
+        color: #fff;
+        border: 0px solid none;
+        border-radius: 10px;
+        background: #d2a564; }
+      .contents .container .board-sec .con-area .btn-box .btn-list {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 120px;
+        height: 42px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 42px;
+        color: #666565;
+        border: 1px solid #717171;
+        border-radius: 10px;
+        background: #fff; }
+  .contents .container .board-sec.faq-sec .con-area .table-col colgroup col.nth-1 {
+    width: 9%; }
+  .contents .container .board-sec.faq-sec .con-area .table-col colgroup col.nth-2 {
+    width: 69%; }
+  .contents .container .board-sec.faq-sec .con-area .table-col colgroup col.nth-3 {
+    width: 12%; }
+  .contents .container .board-sec.faq-sec .con-area .table-col colgroup col.nth-4 {
+    width: 10%; }
+  .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer {
+    display: none;
+    background: #f1f1f1; }
+    .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer td {
+      position: relative;
+      vertical-align: top; }
+      .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer td.ico-answer span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #353535; }
+      .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer td.t-l > p {
+        min-height: 115px; }
+  .contents .container .board-sec.qna-sec .con-area {
+    text-align: right; }
+    .contents .container .board-sec.qna-sec .con-area .table-col {
+      /* 문의접수. 답변완료 */ }
+      .contents .container .board-sec.qna-sec .con-area .table-col [class*='s-btn-'] {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 70px;
+        height: 27px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 27px;
+        color: #fff;
+        border: 0px solid none;
+        border-radius: 0px;
+        background: #d2a564; }
+        .contents .container .board-sec.qna-sec .con-area .table-col [class*='s-btn-'].s-btn-black {
+          background: #353535; }
+      .contents .container .board-sec.qna-sec .con-area .table-col.read tr td .t-txt {
+        min-height: 180px; }
+      .contents .container .board-sec.qna-sec .con-area .table-col.read tr.answer td .t-tit {
+        padding: 10px 25px; }
+        .contents .container .board-sec.qna-sec .con-area .table-col.read tr.answer td .t-tit .s-1 {
+          padding-left: 7px;
+          font-size: 16px;
+          line-height: 27px;
+          color: #666565; }
+      .contents .container .board-sec.qna-sec .con-area .table-col.read tr.answer td .t-txt {
+        min-height: 150px; }
+    .contents .container .board-sec.qna-sec .con-area .btn-write {
+      margin-top: 18px;
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      width: 122px;
+      height: 42px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 42px;
+      color: #fff;
+      border: 0px solid none;
+      border-radius: 10px;
+      background: #d2a564; }
+    .contents .container .board-sec.qna-sec .con-area .pagenation {
+      margin-top: 60px; }
+      .contents .container .board-sec.qna-sec .con-area .pagenation:before, .contents .container .board-sec.qna-sec .con-area .pagenation:after {
+        content: '';
+        display: table;
+        clear: both; }
+      .lt-ie8 .contents .container .board-sec.qna-sec .con-area .pagenation {
+        zoom: 1; }

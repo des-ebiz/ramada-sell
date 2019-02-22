@@ -530,3 +530,20 @@
     }
 }
 
+@mixin chk-box-ie($wh : 16px, $b-c : $bc-gray-1){
+    input[type=checkbox] {
+        width: $wh; 
+        height: $wh; 
+        top: 50%; 
+        left: 2px; 
+        margin: 0; 
+        margin-top: -($wh/2);
+        border: 1px solid $b-c; 
+        background: #fff;
+    }
+    
+    input[type=checkbox] + label:before {
+        content: none;
+    }
+}
+
