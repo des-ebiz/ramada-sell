@@ -239,6 +239,35 @@ button[type=button] {
 .ie8 .ic-bArrow:after {
   content: "▼"; }
 
+/* rArrow, lArrow 버튼 */
+.lic-lArrow:before {
+  position: relative;
+  top: -2px;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #898989;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.lic-lArrow:before {
+  border-right: 0;
+  border-bottom: 0;
+  left: 2px; }
+
+.ie8 .lic-lArrow:before {
+  width: auto;
+  height: auto;
+  border: 0;
+  left: 0;
+  right: 0; }
+
+.ie8 .lic-lArrow:before {
+  content: "◀"; }
+
 .i-borL-tran, .i-borT-tran {
   position: relative; }
 

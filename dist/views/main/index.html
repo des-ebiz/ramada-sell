@@ -26,16 +26,16 @@
     <!--<link rel="canonical" href="도메인">-->
 
     <!--폰트-->
-    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 
     <!--공통 Css-->
     <link rel="stylesheet" href="http://static.ramadapt.co.kr/css/style.css">
     <link rel="stylesheet" href="http://static.ramadapt.co.kr/css/owner/common.css">
-    <!--<link rel=stylesheet href="../../static/css/owner/common.css">	 -->
+    <!--<link rel=stylesheet href="../../static/css/owner/common.css">	-->
     <!--개별 Css-->
-    <!--<link rel=stylesheet href=http://static.ramadapt.co.kr/css/owner/main/init.css>-->
-    <link rel=stylesheet href=../../static/css/owner/main/init.css>
+    <link rel=stylesheet href="http://static.ramadapt.co.kr/css/owner/main/init.css">
+    <!--<link rel=stylesheet href=../../static/css/owner/main/init.css> -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -48,11 +48,11 @@
     <script src="http://static.ramadapt.co.kr/js/jquery.easing.1.3.js"></script>
     <script src="http://static.ramadapt.co.kr/js/common.js"></script>
 
-    <!--<script src="http://static.ramadapt.co.kr/js/owner/common.js"></script>-->
-    <script src="../../static/js/owner/common.js"></script>
+    <script src="http://static.ramadapt.co.kr/js/owner/common.js"></script>
+    <!--<script src="../../static/js/owner/common.js"></script> -->
     <!--개별 Js-->
-    <!--<script src=http://static.ramadapt.co.kr/js/owner/main/init.js></script>-->
-    <script src=../../static/js/owner/main/init.js></script>
+    <script src="http://static.ramadapt.co.kr/js/owner/main/init.js"></script>
+    <!--<script src=../../static/js/owner/main/init.js></script> -->
 
     <!--[if lt IE 9]>
         <script type="text/javascript" src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -81,10 +81,12 @@
                         <ul class="until-menu">
                             <li class="li-st"><a href="#none">체인시설 할인예약</a>
                             </li>
-                            <li><a href="#none">명의변경신청</a>
+                            <!-- 190322 회원정보수정 -->
+                            <li><a href="../join/index.html">회원정보수정</a>
                             </li>
-                            <li><a href="#none">회원정보수정</a>
-                            </li>
+                            <!-- 190315 메뉴 주석처리 -->
+                            <!--<li><a href="#none">명의변경신청</a></li>
+	                -->
                         </ul>
                     </div>
                 </div>
@@ -95,16 +97,17 @@
                         <a href="../book/index.html">통장등록</a>
                     </li>
                     <li class="item-2">
-                        <a href="#none">사업자 등록증 안내</a>
+                        <a href="../tax/index.html">사업자 등록증 안내</a>
                         <ul class="sub-menu">
-                            <li><a href="#none"><span>전자 세금계산서</span></a>
+                            <!-- 해당 메뉴 클릭시 사업자 등록증 안내 페이지로 이동해서 팝업 나타나게 -->
+                            <li><a href="../tax/index.html"><span>전자 세금계산서</span></a>
                             </li>
-                            <li><a href="#none"><span>전자 세금계산서 전송 메일</span></a>
+                            <li><a href="../tax/index.html"><span>전자 세금계산서 전송 메일</span></a>
                             </li>
                         </ul>
                     </li>
                     <li class="item-3">
-                        <a href="#none">수익금 확인</a>
+                        <a href="../proceeds/index.html">수익금 확인</a>
                     </li>
                     <li class="item-4">
                         <a href="../board/index.html">공지사항</a>
@@ -118,7 +121,9 @@
                         </ul>
                     </li>
                     <li class="item-5">
-                        <a href="#none">로그인</a>
+                        <!-- 로그인 / 로그아웃 -->
+                        <a href="../main/index.html">로그인</a>
+                        <!--<a href="#none">로그아웃</a>-->
                     </li>
                 </ul>
             </div>
@@ -132,6 +137,7 @@
                     <div class="main-box login">
                         <h2 class="con-tit">로그인</h2> 
 
+                        <!-- 190322 로그인 form 내용 변경 -->
                         <div class="form-area">
                             <div class="form-box">
                                 <div class="row">
@@ -143,14 +149,15 @@
                                     <input type="text" id="name" class="in-txt" placeholder="성명을 입력해주세요.">
                                 </div>
                                 <div class="row">
-                                    <label for="companyNum" class="lbl">사업자등록번호</label>
-                                    <input type="tel" id="companyNum" class="in-txt" placeholder="사업자등록번호를 입력해주세요. (-포함) ">
+                                    <label for="companyNum" class="lbl">비밀번호</label>
+                                    <input type="password" id="companyNum" class="in-txt" placeholder="비밀번호를 입력해주세요.">
                                 </div>
                             </div>
-                            <a href="#none" class="btn-login">로그인</a>
+                            <!-- 비밀번호 변경 및 첨부파일이 전부 업로드 될때까지 로그인 시 회원정보 확인페이지를 띄우기 -->
+                            <a href="../join/index.html" class="btn-login">로그인</a>
                         </div>
 
-                        <a href="../join/index.html" class="btn-sign ic-rArrow">수분양자 회원가입</a>
+                        <a href="javascript:;" onclick="popFn('#pop_login');" class="btn-sign ic-rArrow">로그인 관련 문의하기</a>
 
                     </div>
                     <!--//.main-box -->
@@ -159,6 +166,63 @@
             </section>
         </div>
         <!--//.contents-->
+
+        <!-- 문의하기 팝업 -->
+        <div id="pop_login" class="pop-wrap">
+            <div class="pop-container">
+                <div class="pop-con">
+                    <p class="p-0">로그인관련 문의하기</p>
+
+                    <div class="table-row">
+                        <table class="table-style">
+                            <colgroup>
+                                <col class="nth-1">
+                                    <col class="nth-2">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <label for="popName" class="lbl">이름</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="popName" class="in-txt-2" value="홍길동">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="popPhone" class="lbl">연락처</label>
+                                    </th>
+                                    <td>
+                                        <input type="tel" id="popPhone" class="in-txt-2" value="010-0000-0000">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="popMail" class="lbl">이메일</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="popMail" class="in-txt-2" value="" placeholder="이메일을 입력해주세요.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="popTxt" class="lbl">내용</label>
+                                    </th>
+                                    <td>
+                                        <textarea id="popTxt" class="ta-txt" placeholder="내용을 입력해주세요."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-box">
+                        <a href="javascript:;" class="btn-gold close">문의하기</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn-close a-i-x close"><span>닫기</span></a>
+            </div>
+        </div>
+        <!--//END : 문의하기 팝업 -->
 
         <!-- 이용약관/개인정보처리방침 팝업 -->
         <div class="layer-pop-bg privacy-bg" id="privacy-bg">

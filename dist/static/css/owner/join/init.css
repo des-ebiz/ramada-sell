@@ -6,47 +6,18 @@
 /* bg color */
 /* border color */
 /* font color */
-/*
-* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../font/NotoSansKR-Thin.woff2) format("woff2"), url(../font/NotoSansKR-Thin.woff) format("woff"), url(../font/NotoSansKR-Thin.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../font/NotoSansKR-Light.woff2) format("woff2"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/NotoSansKR-Regular.woff2) format("woff2"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../font/NotoSansKR-Medium.woff2) format("woff2"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../font/NotoSansKR-Bold.woff2) format("woff2"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 900;
-  src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 .contents .container {
   padding: 70px 0 95px; }
+  .contents .container .alert-txt {
+    margin-top: 25px;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    color: #f73434; }
+    .contents .container .alert-txt + .con-area {
+      margin-top: 40px; }
   .contents .container .con-area {
     margin-top: 60px; }
     .contents .container .con-area .join-area {
@@ -65,7 +36,7 @@
           border-bottom: 0 solid #bcbcbc; }
         .contents .container .con-area .join-area .join-form-box .join-form-tit {
           float: left;
-          width: 25%;
+          width: 20%;
           font-size: 26px;
           font-weight: 500;
           line-height: 1;
@@ -76,7 +47,7 @@
             margin-right: 10px; }
         .contents .container .con-area .join-area .join-form-box .form-box {
           float: left;
-          width: 75%; }
+          width: 80%; }
           .contents .container .con-area .join-area .join-form-box .form-box .row {
             position: relative;
             box-sizing: border-box;
@@ -96,7 +67,7 @@
               box-sizing: border-box;
               padding-left: 14px;
               cursor: default;
-              width: 125px;
+              width: 160px;
               font-weight: 500;
               vertical-align: top;
               line-height: 40px; }
@@ -115,6 +86,8 @@
               font-size: 17px;
               font-weight: 400;
               line-height: 40px; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row .in-txt + .in-txt {
+                margin-top: 14px; }
             .contents .container .con-area .join-area .join-form-box .form-box .row .btn-sel {
               height: 40px;
               font-size: 17px; }
@@ -140,6 +113,7 @@
               display: inline-block;
               width: 140px;
               height: 40px;
+              padding: 0;
               font-size: 17px;
               text-align: center;
               line-height: 40px;
@@ -160,12 +134,19 @@
               height: 0px;
               margin: -1px;
               padding: 0; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .in-txt[type="file"] + .in-txt {
+                margin-top: 0; }
             .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .upload-name {
               width: 510px; }
               .contents .container .con-area .join-area .join-form-box .form-box .row [class*='-box'].file-box .upload-name.wd-2 {
                 width: 705px; }
+            .contents .container .con-area .join-area .join-form-box .form-box .row .p-row {
+              position: relative;
+              box-sizing: border-box;
+              display: table;
+              width: 100%; }
             .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt {
-              padding: 0 0 0 125px;
+              padding: 0 0 0 160px;
               font-size: 15px;
               line-height: 20px;
               color: #292929; }
@@ -175,8 +156,12 @@
                 clear: both; }
               .lt-ie8 .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt {
                 zoom: 1; }
+              .contents .container .con-area .join-area .join-form-box .form-box .row .p-txt .fc-point {
+                margin: 10px 0;
+                color: #f73434; }
             .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-row {
-              display: table-cell; }
+              display: table-cell;
+              width: auto; }
               .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-row .s-1 {
                 padding: 0 25px 0 2px;
                 letter-spacing: -1px; }
@@ -185,12 +170,17 @@
               margin-bottom: 10px; }
             .contents .container .con-area .join-area .join-form-box .form-box .row.row-2 .p-txt {
               color: #909090; }
+          .contents .container .con-area .join-area .join-form-box .form-box .row .lbl .fc-point {
+            color: #f73434; }
+          .contents .container .con-area .join-area .join-form-box .form-box .row .in-txt {
+            font-weight: 500; }
           .contents .container .con-area .join-area .join-form-box .form-box .btn-more {
             position: absolute;
             box-sizing: border-box;
             display: inline-block;
             width: 66px;
             height: 40px;
+            padding: 0;
             font-size: 17px;
             text-align: center;
             line-height: 40px;
@@ -242,6 +232,7 @@
         display: inline-block;
         width: 290px;
         height: 70px;
+        padding: 0;
         font-size: 19px;
         text-align: center;
         line-height: 70px;

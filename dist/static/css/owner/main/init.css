@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* border-radius */
 /* bg color */
 /* border color */
@@ -6,48 +7,10 @@
 /* bg color */
 /* border color */
 /* font color */
-/*
-* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../font/NotoSansKR-Thin.woff2) format("woff2"), url(../font/NotoSansKR-Thin.woff) format("woff"), url(../font/NotoSansKR-Thin.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../font/NotoSansKR-Light.woff2) format("woff2"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/NotoSansKR-Regular.woff2) format("woff2"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../font/NotoSansKR-Medium.woff2) format("woff2"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../font/NotoSansKR-Bold.woff2) format("woff2"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 900;
-  src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 .contents .main-sec {
   padding: 100px 0;
-  background: url(http://img.ramadapt.co.kr/owenr/bg_main.jpg) no-repeat center;
+  background: url(http://img.ramadapt.co.kr/owner/bg_main.jpg) no-repeat center;
   background-size: cover; }
   .contents .main-sec .main-area {
     position: relative;
@@ -55,18 +18,20 @@
     width: 1000px;
     margin: 0 auto;
     height: 585px;
-    background: url(http://img.ramadapt.co.kr/owenr/bg_main_con.jpg) no-repeat center;
+    background: url(http://img.ramadapt.co.kr/owner/bg_main_con.jpg) no-repeat center;
     background-size: 1000px auto; }
     .contents .main-sec .main-area .main-box {
       position: absolute;
       box-sizing: border-box;
       width: 100%;
       top: 50%;
+      text-align: center;
       margin-top: -0; }
       .contents .main-sec .main-area .main-box.login {
         padding: 0 62px; }
         .contents .main-sec .main-area .main-box.login .form-area {
-          padding-top: 46px; }
+          padding-top: 46px;
+          text-align: left; }
           .contents .main-sec .main-area .main-box.login .form-area:before, .contents .main-sec .main-area .main-box.login .form-area:after {
             content: '';
             display: table;
@@ -115,6 +80,8 @@
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 51px; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row .in-txt + .in-txt {
+                  margin-top: 14px; }
               .contents .main-sec .main-area .main-box.login .form-area .form-box .row .btn-sel {
                 height: 51px;
                 font-size: 17px; }
@@ -140,6 +107,7 @@
                 display: inline-block;
                 width: 140px;
                 height: 51px;
+                padding: 0;
                 font-size: 17px;
                 text-align: center;
                 line-height: 51px;
@@ -160,10 +128,17 @@
                 height: 0px;
                 margin: -1px;
                 padding: 0; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .in-txt[type="file"] + .in-txt {
+                  margin-top: 0; }
               .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .upload-name {
                 width: 510px; }
                 .contents .main-sec .main-area .main-box.login .form-area .form-box .row [class*='-box'].file-box .upload-name.wd-2 {
                   width: 705px; }
+              .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-row {
+                position: relative;
+                box-sizing: border-box;
+                display: table;
+                width: 100%; }
               .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt {
                 padding: 0 0 0 140px;
                 font-size: 15px;
@@ -175,8 +150,12 @@
                   clear: both; }
                 .lt-ie8 .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt {
                   zoom: 1; }
+                .contents .main-sec .main-area .main-box.login .form-area .form-box .row .p-txt .fc-point {
+                  margin: 10px 0;
+                  color: #f73434; }
               .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-row {
-                display: table-cell; }
+                display: table-cell;
+                width: auto; }
                 .contents .main-sec .main-area .main-box.login .form-area .form-box .row.row-2 .p-row .s-1 {
                   padding: 0 25px 0 2px;
                   letter-spacing: -1px; }
@@ -191,6 +170,7 @@
             display: table-cell;
             width: 180px;
             height: 100%;
+            padding: 0;
             font-size: 19px;
             text-align: center;
             line-height: 100%;
@@ -198,13 +178,15 @@
             border: 0px solid none;
             border-radius: 10px;
             background: #d2a564;
-            vertical-align: middle; }
+            vertical-align: middle;
+            line-height: 24px; }
         .contents .main-sec .main-area .main-box.login .btn-sign {
           position: relative;
           box-sizing: border-box;
-          display: block;
-          width: 155px;
+          display: inline-block;
+          width: auto;
           height: 36px;
+          padding: 0 5px;
           font-size: 18px;
           text-align: center;
           line-height: 36px;
@@ -213,10 +195,11 @@
           border-radius: 0px;
           background: #fff;
           border-bottom-width: 1px;
-          margin: 45px auto 0; }
+          margin: 90px auto 0; }
           .contents .main-sec .main-area .main-box.login .btn-sign.ic-rArrow:after {
             width: 8px;
             height: 8px;
+            margin-left: 5px;
             right: 0px;
             border-color: #666565; }
       .contents .main-sec .main-area .main-box.login-cm {
@@ -256,6 +239,52 @@
           margin-top: 56px;
           font-size: 15px;
           line-height: 22px; }
+
+/* 문의하기 팝업 */
+#pop_login.pop-wrap .pop-container .pop-con {
+  width: 685px;
+  padding: 65px 64px 35px; }
+  #pop_login.pop-wrap .pop-container .pop-con .p-0 {
+    padding-bottom: 43px; }
+  #pop_login.pop-wrap .pop-container .pop-con .table-row {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%; }
+    #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style {
+      table-layout: fixed;
+      font-size: 13px;
+      line-height: 1.3;
+      text-align: left;
+      border-top: 1px solid #d9d9d9; }
+      #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr {
+        border-bottom: 1px solid #d9d9d9; }
+        #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr th {
+          box-sizing: border-box;
+          width: 85px;
+          padding: 0;
+          font-weight: 500;
+          background: #f8f8f8; }
+        #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td {
+          padding: 8px 25px 8px 10px;
+          word-break: keep-all;
+          font-weight: 400; }
+          #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .in-txt-2, #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .ta-txt, #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .td-txt {
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: 500; }
+          #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .in-txt-2 {
+            width: 200px;
+            height: 30px;
+            line-height: 30px; }
+    #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr th {
+      text-align: center; }
+    #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .in-txt-2 {
+      padding: 0 8px; }
+    #pop_login.pop-wrap .pop-container .pop-con .table-row .table-style tr td .ta-txt {
+      height: 145px;
+      padding: 12px 10px; }
+  #pop_login.pop-wrap .pop-container .pop-con .btn-box {
+    margin-top: 70px; }
 
 .ie .contents .con-sec .main-area .main-box .login-cm-box .p-1 .cm-t-deco {
   background: none;

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+/* border-radius */
+/* bg color */
+/* border color */
+/* font color */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.contents .container {
+  padding: 60px 0 130px; }
+  .contents .container .con-area {
+    margin-top: 76px; }
+    .contents .container .con-area .tax-area .table-row {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%; }
+      .contents .container .con-area .tax-area .table-row .table-style {
+        table-layout: fixed;
+        font-size: 15px;
+        line-height: 1.3;
+        text-align: left;
+        border-top: 2px solid #353535; }
+        .contents .container .con-area .tax-area .table-row .table-style tr {
+          border-bottom: 1px solid #bcbcbc; }
+          .contents .container .con-area .tax-area .table-row .table-style tr th {
+            box-sizing: border-box;
+            width: 215px;
+            padding: 11px 34px 10px 35px;
+            font-weight: 500;
+            background: #f8f8f8; }
+          .contents .container .con-area .tax-area .table-row .table-style tr td {
+            padding: 11px 32px 10px;
+            word-break: keep-all;
+            font-weight: 400; }
+            .contents .container .con-area .tax-area .table-row .table-style tr td .in-txt-2, .contents .container .con-area .tax-area .table-row .table-style tr td .ta-txt, .contents .container .con-area .tax-area .table-row .table-style tr td .td-txt {
+              box-sizing: border-box;
+              font-size: 15px;
+              font-weight: 500; }
+            .contents .container .con-area .tax-area .table-row .table-style tr td .in-txt-2 {
+              width: 170px;
+              height: 38px;
+              line-height: 38px; }
+      .contents .container .con-area .tax-area .table-row th > .lbl {
+        font-weight: 500; }
+    .contents .container .con-area .info-box {
+      margin-top: 40px; }
+    .contents .container .con-area .btn-box {
+      margin-top: 75px; }
+      .contents .container .con-area .btn-box .btn-gold {
+        width: 315px; }
+
+/* 팝업 */
+/* 전자 세금계산서 발급용 사업자등록증 팝업 */
+#pop_bcr.pop-wrap .pop-container .pop-con {
+  padding: 36px 35px 33px; }
+  #pop_bcr.pop-wrap .pop-container .pop-con .pop-img {
+    width: 730px; }
+  #pop_bcr.pop-wrap .pop-container .pop-con .btn-box a {
+    width: 260px;
+    height: 60px; }
+
+/* 전자 세금계산서 전송 메일 팝업 */
+#pop_mail.pop-wrap .pop-container .pop-con {
+  width: 620px;
+  padding: 57px 25px 50px; }
+  #pop_mail.pop-wrap .pop-container .pop-con .p-0 {
+    padding-bottom: 40px; }
+  #pop_mail.pop-wrap .pop-container .pop-con .mail-box {
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 2px solid #e4e4e4;
+    padding: 35px 0 37px; }
+    #pop_mail.pop-wrap .pop-container .pop-con .mail-box * {
+      font-weight: 600; }
+    #pop_mail.pop-wrap .pop-container .pop-con .mail-box .mail-txt {
+      font-size: 29px; }
+    #pop_mail.pop-wrap .pop-container .pop-con .mail-box .p-1 {
+      margin-top: 12px;
+      color: #810000; }
+  #pop_mail.pop-wrap .pop-container .pop-con .info-box {
+    margin-left: 20px; }

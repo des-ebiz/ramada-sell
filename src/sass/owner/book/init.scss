@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+//page-book
+.contents {
+    .container {
+        padding: 65px 0 110px;
+        
+        //sub content
+        .con-area {
+            margin-top: 45px;
+            .book-area {
+                @include b-tb($bt-w : 0); 
+                margin-bottom: 35px;
+                padding-bottom: 40px;
+                
+                .form-box {
+                    @include form-base($l-wd : 185px, $h : 51px);
+                
+                    .like-sel-box {
+                        @include sel-like;
+                    }
+                    
+                    .p-txt {
+                        .d-chk {
+                            margin-top: 13px;
+                            p {
+                                @include chk-box($pd : 0 24px 0 0, $l : auto, $r : 0, $f-s : 14px, $f-c : $fc-black-1);
+                                margin-bottom: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+            .btn-box {
+                margin-top: 77px;
+            }
+        }
+    }
+    
+}
+
+.ie8 .contents {
+    .container {
+        //sub content
+        .con-area {
+            .book-area {
+                .form-box {
+                    .like-sel-box {
+                        .btn-sel {
+                            background-position: right -20px;
+                        }
+                    }
+                    .p-txt {
+                        .d-chk {
+                            p {
+                                @include chk-box-ie;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

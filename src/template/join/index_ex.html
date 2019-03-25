@@ -1,0 +1,164 @@
+@@include('../include/_head.html', {
+	"page": "join"
+})
+	
+</head>
+<body class="page-join">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="contents">
+        <div class="container">
+            <h2 class="con-tit">회원정보 수정</h2> 
+            
+            <!-- sub content -->
+            <div class="con-area">
+                <div class="join-area">
+                    <div class="join-form-box">
+                        <p class="join-form-tit"><span>01</span>회원정보</p>
+                        
+                        <!-- 190322 form 수정 -->
+                        <div class="form-box">
+                            <div class="row">
+                                <label for="userName" class="lbl">이름</label>
+                                <input type="text" id="userName" class="in-txt" value="홍길동" disabled> 
+                            </div>
+                            <div class="row">
+                                <label for="userBirth" class="lbl">생년월일</label>
+                                <input type="tel" id="userBirth" class="in-txt" value="1981년 03월 22일" disabled>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="p-row">
+                                    <label for="userPW" class="lbl">비밀번호 변경<span class="fc-point">(필수)</span></label>
+                                    <input type="password" id="userPW" class="in-txt" placeholder="새 비밀번호 영문, 숫자, 특수문자 조합 8~12자">
+                                    <input type="password" id="userPW2" class="in-txt" placeholder="비밀번호  다시입력 영문,숫자,특수문자 조합 8~12자">
+                                </div>
+                                <div class="p-txt">
+                                    <p class="fc-point">※ 비밀번호를 변경해주세요.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="p-row">
+                                    <label for="userPhone" class="lbl">휴대폰<span class="fc-point">(필수)</span></label>
+                                    <p class="phone-box">
+                                        <input type="tel" id="userPhone" class="in-txt w-1" placeholder="휴대폰 번호를 입력해주세요. (-없이)">
+                                        <a href="#none" class="btn-form">휴대폰 인증</a>
+                                    </p>
+                                </div>
+                                <div class="p-txt">
+                                    <p class="fc-point">※ 최초 1회 휴대폰 본인인증을 받고 있습니다.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <label for="userAdr" class="lbl">주소</label>
+                                <p class="adr-box">
+                                    <input type="text" id="userAdr" class="in-txt w-2" placeholder="">
+                                    <a href="#none" class="btn-form">우편번호 찾기</a>
+                                    <input type="text" id="userAdr1" class="in-txt w-half" placeholder="">
+                                    <input type="text" id="userAdr2" class="in-txt w-half" placeholder="">
+                                </p>
+                            </div>
+                            <div class="row">
+                                <label for="userMail" class="lbl">이메일</label>
+                                <input type="text" id="userMail" class="in-txt" placeholder="이메일을 입력해주세요.">
+                            </div>
+                            <div class="row row-2">
+                                <div class="p-box">
+                                    <label for="roomNums" class="lbl">계약호수</label>
+                                    <p class="p-row">
+                                        <input type="tel" id="roomNums" class="in-txt w-3" placeholder="">
+                                        <span class="s-1">호</span>
+                                    </p>
+                                    <label for="userNums" class="lbl lw-1">사업자등록번호</label>
+                                    <p class="p-row">
+                                        <input type="tel" id="userNums" class="in-txt w-4" placeholder="">
+                                    </p>
+                                </div>
+                                
+                                <!-- 추가 버튼 클릭시 p-box 영역 부분 생성 -->
+                                <div class="p-box">
+                                    <label for="roomNums" class="lbl">계약호수</label>
+                                    <p class="p-row">
+                                        <input type="tel" id="roomNums" class="in-txt w-3" placeholder="">
+                                        <span class="s-1">호</span>
+                                    </p>
+                                    <label for="userNums" class="lbl lw-1">사업자등록번호</label>
+                                    <p class="p-row">
+                                        <input type="tel" id="userNums" class="in-txt w-4" placeholder="">
+                                    </p>
+                                </div>
+                                <div class="p-txt">
+                                    <p>※ 보유중인 계약호수를 모두 작성해 주세요.</p>
+                                </div>
+                                <a href="javascript:;" class="btn-more"><span></span>추가</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="join-form-box">
+                        <p class="join-form-tit"><span>02</span>첨부파일</p>
+                        
+                        <div class="form-box">
+                            <div class="row">
+                                <span class="lbl">등기부등본</span>
+                                <p class="file-box">
+                                    <input type="file" id="file01" class="in-txt upload-hidden">
+                                    <input class="in-txt upload-name" value="" disabled="disabled">
+                                    <label for="file01" class="btn-form file">업로드</label>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <span class="lbl">사업자 등록증</span>
+                                <p class="file-box">
+                                    <input type="file" id="file02" class="in-txt upload-hidden">
+                                    <input class="in-txt upload-name" value="" disabled="disabled">
+                                    <label for="file02" class="btn-form file">업로드</label>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <span class="lbl">통장사본</span>
+                                <p class="file-box">
+                                    <input type="file" id="file03" class="in-txt upload-hidden">
+                                    <input class="in-txt upload-name" value="" disabled="disabled">
+                                    <label for="file03" class="btn-form file">업로드</label>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <span class="lbl">신분증</span>
+                                <p class="file-box">
+                                    <input type="file" id="file04" class="in-txt upload-hidden">
+                                    <input class="in-txt upload-name" value="" disabled="disabled">
+                                    <label for="file04" class="btn-form file">업로드</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <p class="bul-txt">회원정보와 첨부서류 정보가 일치해야 회원승인이 가능하므로, 정확한 정보를 등록해 주시기 바랍니다.</p>
+                    
+                    <div class="d-chk">
+                        <!-- 약관내용 자세히보기 버튼 -내용 산출물 미정으로 코딩 틀만 잡아둠 -->
+                        <p><input type="checkbox" id="check01"> <label for="check01">이용약관에 동의합니다.</label> <a href="#none" class="btn-detail">자세히 보기</a></p>
+                    </div>
+                </div>
+                
+                <div class="btn-box">
+                    <a href="#none" class="btn-gold">완료</a>
+                </div>
+            </div>
+            <!--//.join-area -->
+        </div>
+	</div>
+	<!--//.contents-->    
+
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

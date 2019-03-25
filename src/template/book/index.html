@@ -1,0 +1,94 @@
+@@include('../include/_head.html', {
+	"page": "book"
+})
+</head>
+<body class="page-book">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="contents">
+        <div class="container">
+            <h2 class="con-tit">통장등록</h2> 
+           
+            <!-- sub content -->
+            <div class="con-area">
+                <div class="book-area">
+                    <div class="form-box">
+                        <div class="row">
+                            <label for="userName" class="lbl">예금주</label>
+                            <input type="text" id="userName" class="in-txt" placeholder="이름을 입력해주세요." value="홍길동">
+                        </div>
+                        <div class="row">
+                            <span class="lbl">은행</span>
+                            <div class="like-sel-box" id="my_bank">
+                                <button type="button" class="btn-sel">이베스트투자증권</button>
+                                <ul class="sel-menu" style="display: none">
+                                   <li><a href="javascript:;" class="bank">SC제일</a></li> 
+                                   <li><a href="javascript:;" class="bank">국민</a></li> 
+                                   <li><a href="javascript:;" class="bank">신한</a></li> 
+                                   <li><a href="javascript:;" class="bank">농협</a></li>
+                                   <li><a href="javascript:;" class="bank">우리</a></li> 
+                                   <li><a href="javascript:;" class="bank">기업</a></li> 
+                                   <li><a href="javascript:;" class="bank">대구</a></li> 
+                                   <li><a href="javascript:;" class="bank">제주</a></li>  
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="userBankNum" class="lbl">계좌번호</label>
+                            <input type="tel" id="userBankNum" class="in-txt" placeholder="계좌번호를 입력해주세요.">
+                        </div>
+                        <div class="row">
+                            <label for="userPhone" class="lbl">휴대폰 번호</label>
+                            <input type="tel" id="userPhone" class="in-txt" placeholder="휴대폰 번호를 입력해주세요.">
+                        </div>
+                        <div class="row">
+                            <label for="userEmail" class="lbl">이메일</label>
+                            <input type="tel" id="userEmail" class="in-txt" placeholder="이메일을 입력해주세요.">
+                        </div>
+                        <div class="row">
+                            <div class="p-row">
+                                <span class="lbl">통장사본 이미지</span>
+                                <p class="file-box">
+                                    <input type="file" id="file01" class="in-txt upload-hidden">
+                                    <input class="in-txt upload-name wd-2" value="" disabled="disabled">
+                                    <label for="file01" class="btn-form file">업로드</label>
+                                </p>
+                            </div>
+                            <div class="p-txt">
+                                <div class="d-chk">
+                                    <p><input type="checkbox" id="check01"><label for="check01">배종명SC제일통장.jpg</label> <a href="#none" class="btn-del">삭제</a></p>
+                                    <!-- 사본이미지가 여러개일 경우 p 영역 여러개 -->
+                                    <p><input type="checkbox" id="check02"><label for="check02">배종명SC제일통장.jpg</label> <a href="#none" class="btn-del">삭제</a></p>
+                                </div>
+                                <p>* 이미지 첨부는 3MB 미만의 이미지 형식 포맷(.jpg, .png, pdf, .gif)만 지원합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="bul-txt">
+                        주의사항
+                        <ul class="info-list">
+                            <li>1. 반드시, 해당 호실 소유주명과 확정수익금 계좌 예금주의 성명과 기등록된 생년월일이 일치해야 합니다.</li>
+                            <li>2. 확정 수익금 계좌 정보 잘못 기재로 인하여 수익금 지급에 문제가 발생하지 않도록 정확하게 계좌정보를 등록하여 주시기 바랍니다.</li>
+                            <li>3. 통장 사본은 확정수익금 지급계좌정보 확인시 필요하니 등록해 주시기 바랍니다. </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <a href="#none" class="btn-gold">완료</a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!--//.contents-->    
+
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

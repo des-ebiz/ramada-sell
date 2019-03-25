@@ -110,7 +110,7 @@
                                             .btn-down {
                                                 display: inline-block;
                                                 padding-left: 40px;
-                                                background: url(http://img.ramadapt.co.kr/owenr/board/ico_down.png) no-repeat 0 center; 
+                                                background: url(http://img.ramadapt.co.kr/owner/board/ico_down.png) no-repeat 0 center; 
                                                 background-size: 18px auto;
                                                 span {
                                                     display: inline-block;
@@ -155,7 +155,7 @@
                         @include btn-com($wd : 120px, $he : 42px, $f-s : 16px);
                     }
                     .btn-list {
-                        @include btn-com($wd : 120px, $he : 42px, $f-s : 16px, $f-c : $fc-gray-6, $bd-w : 1px, $bd-c : $bc-gray-5, $btn-bg : #fff);
+                        @include btn-com($wd : 120px, $he : 42px, $f-s : 16px, $f-c : $fc-gray-6, $bd-w : 1px, $bd-c : $bc-gray-5, $btn-bg : $bg-white-1);
                     }
                 }
             }
@@ -205,6 +205,7 @@
                                     }
                                     &.t-l > p {
                                         min-height: 115px;
+                                        word-break: break-word;
                                     }
                                 }
                             }

@@ -1,0 +1,95 @@
+@@include('../include/_head.html', {
+	"page": "main"
+})
+	
+</head>
+<body class="page-main">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="contents">
+        <section class="main-sec">
+            <div class="main-area">
+                <!-- 로그인 영역 -->
+                <div class="main-box login">
+                    <h2 class="con-tit">로그인</h2> 
+
+                    <div class="form-area">
+                        <div class="form-box">
+                            <div class="row">
+                                <label for="name" class="lbl">성명</label>
+                                <input type="text" id="name" class="in-txt" placeholder="성명을 입력해주세요.">
+                            </div>
+                            <div class="row">
+                                <label for="roomNum" class="lbl">휴대폰 번호</label>
+                                <input type="tel" id="roomNum" class="in-txt" placeholder="번호를 입력해주세요.">
+                            </div>
+                        </div>
+                        <a href="#none" class="btn-login">휴대폰<br>인증하기</a>
+                    </div>
+
+                    <a href="javascript:;" onclick="popFn('#pop_login');" class="btn-sign ic-rArrow">로그인 관련 문의하기</a>
+                    
+                </div>
+                <!--//.main-box -->
+            </div>
+            <!--//.main-area -->
+        </section>
+	</div>
+	<!--//.contents-->    
+
+    <!-- 문의하기 팝업 -->
+    <div id="pop_login" class="pop-wrap">
+        <div class="pop-container">
+            <div class="pop-con">
+                <p class="p-0">로그인관련 문의하기</p>
+
+                <div class="table-row">
+                    <table class="table-style">
+                        <colgroup>
+                            <col class="nth-1">
+                            <col class="nth-2">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="popName" class="lbl">이름</label></th>
+                                <td>
+                                    <input type="text" id="popName" class="in-txt-2" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popPhone" class="lbl">연락처</label></th>
+                                <td>
+                                    <input type="tel" id="popPhone" class="in-txt-2" value="010-0000-0000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popMail" class="lbl">이메일</label></th>
+                                <td>
+                                    <input type="text" id="popMail" class="in-txt-2" value="" placeholder="이메일을 입력해주세요.">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popTxt" class="lbl">내용</label></th>
+                                <td>
+                                    <textarea id="popTxt" class="ta-txt" placeholder="내용을 입력해주세요."></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-box">
+                    <a href="javascript:;" class="btn-gold close">문의하기</a>
+                </div>
+            </div>
+            <a href="javascript:;" class="btn-close a-i-x close"><span>닫기</span></a>
+        </div>
+    </div> 
+    <!--//END : 문의하기 팝업 -->
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

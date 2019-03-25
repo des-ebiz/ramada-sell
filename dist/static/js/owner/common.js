@@ -3,6 +3,7 @@ $(function(){
     menuFn();
     //tabFn();
     downSelFn();
+    popMvFn();
 });
  
 
@@ -17,6 +18,7 @@ function menuFn(){
     
      gnb.on('mouseleave', function(){
         $(this).find('.sub-menu').stop().slideUp();
+        $(this).find('.sub-menu').css({'height' : 'auto'})
     });
 }
 
@@ -57,5 +59,53 @@ function downSelFn(){
     });
 }
 
+//pop Function
+function popFn(ths){
+    var ths = $(ths);
+    
+    ths.addClass('on');
+    popMvFn();
+}
+
+function popMvFn(){
+    if( $('.pop-wrap').hasClass('on') ){
+        var popId = $('#'+$('.pop-wrap.on').attr('id'));
+        var winH = $(window).height();
+        var popIdH;
+        //console.log($('.pop-wrap').attr('id'));
+        
+        popId.show();
+        $('html, body').scrollTop(0);
+        //window보다 크면 scroll / 작으면 auto + 가운데 정렬
+        popIdH = popId.find('.pop-container').height();
+        if( winH <= popIdH ){
+            popId.css({'overflow-y' : 'scroll'});
+            popId.find('.pop-container').css({'top' : '0', 'margin-top' : 90+'px'});
+        }else{
+            //console.log(popIdH)
+            popId.css({'overflow-y' : 'auto'});
+            popId.find('.pop-container').css({'top' : 50+'%', 'margin-top' : '-'+(popIdH/2)+'px'});
+        }
+        
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+        popId.on('scroll', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return;
+        });
+    
+        popId.find('.close').on('click', function(){
+            popId.scrollTop(0);
+            popId.removeClass('on');
+            popId.hide();
+
+            $('html, body').css({'overflow': 'auto', 'height': '100%'});
+            popId.off('scroll');
+        });
+        
+    }else{
+        //console.log('none');
+    }
+}
 
 

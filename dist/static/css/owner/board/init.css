@@ -7,45 +7,7 @@
 /* bg color */
 /* border color */
 /* font color */
-/*
-* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../font/NotoSansKR-Thin.woff2) format("woff2"), url(../font/NotoSansKR-Thin.woff) format("woff"), url(../font/NotoSansKR-Thin.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../font/NotoSansKR-Light.woff2) format("woff2"), url(../font/NotoSansKR-Light.woff) format("woff"), url(../font/NotoSansKR-Light.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/NotoSansKR-Regular.woff2) format("woff2"), url(../font/NotoSansKR-Regular.woff) format("woff"), url(../font/NotoSansKR-Regular.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  src: url(../font/NotoSansKR-Medium.woff2) format("woff2"), url(../font/NotoSansKR-Medium.woff) format("woff"), url(../font/NotoSansKR-Medium.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../font/NotoSansKR-Bold.woff2) format("woff2"), url(../font/NotoSansKR-Bold.woff) format("woff"), url(../font/NotoSansKR-Bold.otf) format("opentype"); }
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 900;
-  src: url(../font/NotoSansKR-Black.woff2) format("woff2"), url(../font/NotoSansKR-Black.woff) format("woff"), url(../font/NotoSansKR-Black.otf) format("opentype"); }
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 .contents .container {
   padding: 50px 0 80px;
   /* sub content */
@@ -91,7 +53,7 @@
           position: relative;
           box-sizing: border-box;
           text-align: left;
-          background: #fff url(http://img.ramadapt.co.kr/owenr/board/bg_arrow_b.png) no-repeat;
+          background: #fff url(http://img.ramadapt.co.kr/owner/board/bg_arrow_b.png) no-repeat;
           background-size: 24px auto;
           background-position: right 13px;
           display: inline-block;
@@ -113,6 +75,7 @@
           display: inline-block;
           width: 80px;
           height: 36px;
+          padding: 0;
           font-size: 15px;
           text-align: center;
           line-height: 36px;
@@ -131,25 +94,35 @@
         line-height: 20px;
         border-top: 2px solid #353535;
         border-bottom: 1px solid #bcbcbc; }
-        .contents .container .board-sec .con-area .table-col .table-style thead tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
+        .contents .container .board-sec .con-area .table-col .table-style thead tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
           padding: 10px 0;
           text-align: center; }
         .contents .container .board-sec .con-area .table-col .table-style thead tr th {
           font-weight: 500;
           background: #f8f8f8; }
-        .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
+        .contents .container .board-sec .con-area .table-col .table-style tbody tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
           border-top: 1px solid #bcbcbc;
           word-break: keep-all; }
-          .contents .container .board-sec .con-area .table-col .table-style tbody tr td a {
+          .contents .container .board-sec .con-area .table-col .table-style tbody tr th a, .contents .container .board-sec .con-area .table-col .table-style tbody tr td a {
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
             word-wrap: normal;
             white-space: nowrap; }
+          .contents .container .board-sec .con-area .table-col .table-style tbody tr th.t-r, .contents .container .board-sec .con-area .table-col .table-style tbody tr td.t-r {
+            text-align: right; }
         .contents .container .board-sec .con-area .table-col .table-style .t-l {
           padding-left: 13px;
           padding-right: 13px;
           text-align: left; }
+        .contents .container .board-sec .con-area .table-col .table-style.type-2 thead tr th {
+          border-left: 1px solid #bcbcbc; }
+          .contents .container .board-sec .con-area .table-col .table-style.type-2 thead tr th:first-child {
+            border-left: 0; }
+        .contents .container .board-sec .con-area .table-col .table-style.type-2 tbody tr td {
+          border-left: 1px solid #bcbcbc; }
+          .contents .container .board-sec .con-area .table-col .table-style.type-2 tbody tr td:first-child {
+            border-left: 0; }
       .contents .container .board-sec .con-area .table-col colgroup col.nth-1 {
         width: 8%; }
       .contents .container .board-sec .con-area .table-col colgroup col.nth-2 {
@@ -184,7 +157,7 @@
           .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down p .btn-down {
             display: inline-block;
             padding-left: 40px;
-            background: url(http://img.ramadapt.co.kr/owenr/board/ico_down.png) no-repeat 0 center;
+            background: url(http://img.ramadapt.co.kr/owner/board/ico_down.png) no-repeat 0 center;
             background-size: 18px auto; }
             .contents .container .board-sec .con-area .table-col.read tbody tr td.t-down p .btn-down span {
               display: inline-block;
@@ -205,20 +178,27 @@
       .contents .container .board-sec .con-area .table-row .table-style {
         table-layout: fixed;
         font-size: 18px;
+        line-height: 1.3;
         text-align: left;
         border-top: 2px solid #353535; }
         .contents .container .board-sec .con-area .table-row .table-style tr {
           border-bottom: 1px solid #d9d9d9; }
           .contents .container .board-sec .con-area .table-row .table-style tr th {
+            box-sizing: border-box;
             width: 145px;
+            padding: 0;
+            font-weight: 500;
             background: #f8f8f8; }
           .contents .container .board-sec .con-area .table-row .table-style tr td {
             padding: 9px 0 9px 17px;
-            word-break: keep-all; }
-            .contents .container .board-sec .con-area .table-row .table-style tr td .in-txt-2, .contents .container .board-sec .con-area .table-row .table-style tr td .ta-txt {
+            word-break: keep-all;
+            font-weight: 400; }
+            .contents .container .board-sec .con-area .table-row .table-style tr td .in-txt-2, .contents .container .board-sec .con-area .table-row .table-style tr td .ta-txt, .contents .container .board-sec .con-area .table-row .table-style tr td .td-txt {
+              box-sizing: border-box;
               font-size: 16px;
               font-weight: 500; }
             .contents .container .board-sec .con-area .table-row .table-style tr td .in-txt-2 {
+              width: 170px;
               height: 38px;
               line-height: 38px; }
       .contents .container .board-sec .con-area .table-row tr th {
@@ -254,6 +234,7 @@
         display: inline-block;
         width: 120px;
         height: 42px;
+        padding: 0;
         font-size: 16px;
         text-align: center;
         line-height: 42px;
@@ -267,6 +248,7 @@
         display: inline-block;
         width: 120px;
         height: 42px;
+        padding: 0;
         font-size: 16px;
         text-align: center;
         line-height: 42px;
@@ -297,7 +279,8 @@
         border-radius: 50%;
         border: 1px solid #353535; }
       .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer td.t-l > p {
-        min-height: 115px; }
+        min-height: 115px;
+        word-break: break-word; }
   .contents .container .board-sec.qna-sec .con-area {
     text-align: right; }
     .contents .container .board-sec.qna-sec .con-area .table-col {
@@ -308,6 +291,7 @@
         display: inline-block;
         width: 70px;
         height: 27px;
+        padding: 0;
         font-size: 14px;
         text-align: center;
         line-height: 27px;
@@ -335,6 +319,7 @@
       display: inline-block;
       width: 122px;
       height: 42px;
+      padding: 0;
       font-size: 16px;
       text-align: center;
       line-height: 42px;

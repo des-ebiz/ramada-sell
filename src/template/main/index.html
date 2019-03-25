@@ -15,6 +15,7 @@
                 <div class="main-box login">
                     <h2 class="con-tit">로그인</h2> 
 
+                    <!-- 190322 로그인 form 내용 변경 -->
                     <div class="form-area">
                         <div class="form-box">
                             <div class="row">
@@ -26,14 +27,15 @@
                                 <input type="text" id="name" class="in-txt" placeholder="성명을 입력해주세요.">
                             </div>
                             <div class="row">
-                                <label for="companyNum" class="lbl">사업자등록번호</label>
-                                <input type="tel" id="companyNum" class="in-txt" placeholder="사업자등록번호를 입력해주세요. (-포함) ">
+                                <label for="companyNum" class="lbl">비밀번호</label>
+                                <input type="password" id="companyNum" class="in-txt" placeholder="비밀번호를 입력해주세요.">
                             </div>
                         </div>
-                        <a href="#none" class="btn-login">로그인</a>
+                        <!-- 비밀번호 변경 및 첨부파일이 전부 업로드 될때까지 로그인 시 회원정보 확인페이지를 띄우기 -->
+                        <a href="../join/index.html" class="btn-login">로그인</a>
                     </div>
 
-                    <a href="../join/index.html" class="btn-sign ic-rArrow">수분양자 회원가입</a>
+                    <a href="javascript:;" onclick="popFn('#pop_login');" class="btn-sign ic-rArrow">로그인 관련 문의하기</a>
                     
                 </div>
                 <!--//.main-box -->
@@ -41,8 +43,57 @@
             <!--//.main-area -->
         </section>
 	</div>
-	<!--//.contents-->    
+	<!--//.contents--> 
 
+    <!-- 문의하기 팝업 -->
+    <div id="pop_login" class="pop-wrap">
+        <div class="pop-container">
+            <div class="pop-con">
+                <p class="p-0">로그인관련 문의하기</p>
+
+                <div class="table-row">
+                    <table class="table-style">
+                        <colgroup>
+                            <col class="nth-1">
+                            <col class="nth-2">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="popName" class="lbl">이름</label></th>
+                                <td>
+                                    <input type="text" id="popName" class="in-txt-2" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popPhone" class="lbl">연락처</label></th>
+                                <td>
+                                    <input type="tel" id="popPhone" class="in-txt-2" value="010-0000-0000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popMail" class="lbl">이메일</label></th>
+                                <td>
+                                    <input type="text" id="popMail" class="in-txt-2" value="" placeholder="이메일을 입력해주세요.">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="popTxt" class="lbl">내용</label></th>
+                                <td>
+                                    <textarea id="popTxt" class="ta-txt" placeholder="내용을 입력해주세요."></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-box">
+                    <a href="javascript:;" class="btn-gold close">문의하기</a>
+                </div>
+            </div>
+            <a href="javascript:;" class="btn-close a-i-x close"><span>닫기</span></a>
+        </div>
+    </div> 
+    <!--//END : 문의하기 팝업 -->   
+    
 	@@include('../include/_footer.html') 
 </div>
 

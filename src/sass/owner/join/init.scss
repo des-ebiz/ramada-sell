@@ -8,6 +8,18 @@
     .container {
         padding: 70px 0 95px;
         
+        .alert-txt {
+            margin-top: 25px;
+            font-size: 21px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 30px;
+            color: $fc-red-4;
+            & + .con-area {
+                margin-top: 40px;
+            }
+        }
+        
         .con-area {
             margin-top: 60px;
             .join-area {
@@ -23,7 +35,7 @@
                     
                     .join-form-tit {
                         float: left;
-                        width: 25%;
+                        width: 20%;
                         font-size: 26px;
                         font-weight: 500;
                         line-height: 1;
@@ -37,11 +49,21 @@
                     
                     .form-box {
                         float: left;
-                        width: 75%;
-                        @include form-base($t : 19px, $h : 40px, $l-wd : 125px);
+                        width: 80%;
+                        @include form-base($t : 19px, $h : 40px, $l-wd : 160px);
+                        .row {
+                            .lbl {
+                                .fc-point {
+                                    color: $fc-red-4;
+                                }
+                            }
+                            .in-txt {
+                                font-weight: 500;
+                            }
+                        }
                         
                         .btn-more {
-                            @include btn-com($po : absolute, $wd : 66px, $he : 40px, $f-s : 17px, $f-c : $fc-black-1, $bd-w : 1px, $bd-c : $bc-black-1, $bd-r : $bd-r-0, $btn-bg : #fff);
+                            @include btn-com($po : absolute, $wd : 66px, $he : 40px, $f-s : 17px, $f-c : $fc-black-1, $bd-w : 1px, $bd-c : $bc-black-1, $bd-r : $bd-r-0, $btn-bg : $bg-white-1);
                             top: 0;
                             right: 0;
                             @include btn-more;

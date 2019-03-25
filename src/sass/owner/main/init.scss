@@ -7,11 +7,11 @@
 .contents {
     .main-sec {
         padding: 100px 0;
-        background: url(http://img.ramadapt.co.kr/owenr/bg_main.jpg) no-repeat center; background-size: cover;
+        background: url(http://img.ramadapt.co.kr/owner/bg_main.jpg) no-repeat center; background-size: cover;
         .main-area {
             @include centerThis;
             height: 585px;
-            background: url(http://img.ramadapt.co.kr/owenr/bg_main_con.jpg) no-repeat center; background-size: 1000px auto;
+            background: url(http://img.ramadapt.co.kr/owner/bg_main_con.jpg) no-repeat center; background-size: 1000px auto;
             
             //세로정렬을 위한 기본 정의 css
             .main-box {
@@ -19,6 +19,7 @@
                 box-sizing: border-box;
                 width: 100%;
                 top: 50%; 
+                text-align: center;
                 margin-top: -0;
             
                 //로그인 화면
@@ -27,6 +28,7 @@
                     .form-area {
                         padding-top: 46px;
                         @include clearfix;
+                        text-align: left;
                         .form-box {
                             @include form-base;
                             display: table-cell;
@@ -36,17 +38,19 @@
                         .btn-login {
                             @include btn-com($dis : table-cell, $wd : 180px, $he : 100%);
                             vertical-align: middle;
+                            line-height: 24px;
                         }
                     }
                     //회원가입 버튼
                     .btn-sign {
-                        @include btn-com($dis : block, $wd : 155px, $he : 36px, $f-s : 18px, $f-c : $fc-gray-6, $bd-c : $bc-gray-1, $bd-r : $bd-r-0, $btn-bg : #fff);
+                        @include btn-com($wd : auto, $he : 36px, $pd : 0 5px, $f-s : 18px, $f-c : $fc-gray-6, $bd-c : $bc-gray-1, $bd-r : $bd-r-0, $btn-bg : $bg-white-1);
                         border-bottom-width: 1px;
-                        margin: 45px auto 0;
+                        margin: 90px auto 0;
                         &.ic-rArrow {
                             &:after {
                                 width: 8px;
                                 height: 8px;
+                                margin-left: 5px;
                                 right: 0px;
                                 border-color: $fc-gray-6;
                             }
@@ -99,6 +103,42 @@
     }
 }
 
+/* 문의하기 팝업 */
+#pop_login.pop-wrap {
+    .pop-container {
+        .pop-con {
+            width: 685px;
+            padding: 65px 64px 35px;
+            .p-0 {
+                padding-bottom: 43px;
+            }
+            
+            .table-row {
+                @include table-row($f-s : 13px, $td-f-s : 12px, $td-h : 30px, $td-pd : 8px 25px 8px 10px, $bt-w : 1px, $bt-c : $bc-gray-4, $w-th : 85px, $i-wd : 200px);
+                .table-style {
+                    tr {
+                        th {
+                            text-align: center;
+                        }
+                        td {
+                            .in-txt-2 {
+                                padding: 0 8px;
+                            }
+                            .ta-txt {
+                                height: 145px;
+                                padding: 12px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .btn-box {
+                margin-top: 70px;
+            }
+        }
+    }
+}
 
 //ie 일때
 .ie .contents {

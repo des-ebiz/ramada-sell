@@ -26,16 +26,16 @@
     <!--<link rel="canonical" href="도메인">-->
 
     <!--폰트-->
-    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 
     <!--공통 Css-->
     <link rel="stylesheet" href="http://static.ramadapt.co.kr/css/style.css">
     <link rel="stylesheet" href="http://static.ramadapt.co.kr/css/owner/common.css">
-    <!--<link rel=stylesheet href="../../static/css/owner/common.css">	 -->
+    <!--<link rel=stylesheet href="../../static/css/owner/common.css">	-->
     <!--개별 Css-->
-    <!--<link rel=stylesheet href=http://static.ramadapt.co.kr/css/owner/board/init.css>-->
-    <link rel=stylesheet href=../../static/css/owner/board/init.css>
+    <link rel=stylesheet href="http://static.ramadapt.co.kr/css/owner/board/init.css">
+    <!--<link rel=stylesheet href=../../static/css/owner/board/init.css> -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -48,11 +48,11 @@
     <script src="http://static.ramadapt.co.kr/js/jquery.easing.1.3.js"></script>
     <script src="http://static.ramadapt.co.kr/js/common.js"></script>
 
-    <!--<script src="http://static.ramadapt.co.kr/js/owner/common.js"></script>-->
-    <script src="../../static/js/owner/common.js"></script>
+    <script src="http://static.ramadapt.co.kr/js/owner/common.js"></script>
+    <!--<script src="../../static/js/owner/common.js"></script> -->
     <!--개별 Js-->
-    <!--<script src=http://static.ramadapt.co.kr/js/owner/board/init.js></script>-->
-    <script src=../../static/js/owner/board/init.js></script>
+    <script src="http://static.ramadapt.co.kr/js/owner/board/init.js"></script>
+    <!--<script src=../../static/js/owner/board/init.js></script> -->
 
     <!--[if lt IE 9]>
         <script type="text/javascript" src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -81,10 +81,12 @@
                         <ul class="until-menu">
                             <li class="li-st"><a href="#none">체인시설 할인예약</a>
                             </li>
-                            <li><a href="#none">명의변경신청</a>
+                            <!-- 190322 회원정보수정 -->
+                            <li><a href="../join/index.html">회원정보수정</a>
                             </li>
-                            <li><a href="#none">회원정보수정</a>
-                            </li>
+                            <!-- 190315 메뉴 주석처리 -->
+                            <!--<li><a href="#none">명의변경신청</a></li>
+	                -->
                         </ul>
                     </div>
                 </div>
@@ -95,16 +97,17 @@
                         <a href="../book/index.html">통장등록</a>
                     </li>
                     <li class="item-2">
-                        <a href="#none">사업자 등록증 안내</a>
+                        <a href="../tax/index.html">사업자 등록증 안내</a>
                         <ul class="sub-menu">
-                            <li><a href="#none"><span>전자 세금계산서</span></a>
+                            <!-- 해당 메뉴 클릭시 사업자 등록증 안내 페이지로 이동해서 팝업 나타나게 -->
+                            <li><a href="../tax/index.html"><span>전자 세금계산서</span></a>
                             </li>
-                            <li><a href="#none"><span>전자 세금계산서 전송 메일</span></a>
+                            <li><a href="../tax/index.html"><span>전자 세금계산서 전송 메일</span></a>
                             </li>
                         </ul>
                     </li>
                     <li class="item-3">
-                        <a href="#none">수익금 확인</a>
+                        <a href="../proceeds/index.html">수익금 확인</a>
                     </li>
                     <li class="item-4">
                         <a href="../board/index.html">공지사항</a>
@@ -118,7 +121,9 @@
                         </ul>
                     </li>
                     <li class="item-5">
-                        <a href="#none">로그인</a>
+                        <!-- 로그인 / 로그아웃 -->
+                        <a href="../main/index.html">로그인</a>
+                        <!--<a href="#none">로그아웃</a>-->
                     </li>
                 </ul>
             </div>
