@@ -255,7 +255,7 @@
                 th, td {
                     @extend %t-style;
                     border-top: 1px solid $bb-c;
-                    word-break: keep-all;
+                    word-break: break-all; //keep all 의 경우 td에서 띄어쓰기가 없을경우 텍스트가 잘리지 않는 현상이 있어 수정
                     a {
                         display: block;
                         overflow: hidden; 

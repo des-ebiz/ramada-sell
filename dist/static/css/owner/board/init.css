@@ -102,7 +102,7 @@
           background: #f8f8f8; }
         .contents .container .board-sec .con-area .table-col .table-style tbody tr th, .contents .container .board-sec .con-area .table-col .table-style tbody tr td {
           border-top: 1px solid #bcbcbc;
-          word-break: keep-all; }
+          word-break: break-all; }
           .contents .container .board-sec .con-area .table-col .table-style tbody tr th a, .contents .container .board-sec .con-area .table-col .table-style tbody tr td a {
             display: block;
             overflow: hidden;
@@ -133,6 +133,8 @@
         width: 13%; }
       .contents .container .board-sec .con-area .table-col colgroup col.nth-5 {
         width: 8%; }
+      .contents .container .board-sec .con-area .table-col > * {
+        word-break: break-word; }
       .contents .container .board-sec .con-area .table-col.read colgroup col.nth-1 {
         width: 70%; }
       .contents .container .board-sec .con-area .table-col.read colgroup col.nth-2 {
@@ -201,6 +203,8 @@
               width: 170px;
               height: 38px;
               line-height: 38px; }
+      .contents .container .board-sec .con-area .table-row > * {
+        word-break: break-word; }
       .contents .container .board-sec .con-area .table-row tr th {
         text-align: center; }
     .contents .container .board-sec .con-area .pagenation {
@@ -279,8 +283,7 @@
         border-radius: 50%;
         border: 1px solid #353535; }
       .contents .container .board-sec.faq-sec .con-area .table-col tbody tr.answer td.t-l > p {
-        min-height: 115px;
-        word-break: break-word; }
+        min-height: 115px; }
   .contents .container .board-sec.qna-sec .con-area {
     text-align: right; }
     .contents .container .board-sec.qna-sec .con-area .table-col {

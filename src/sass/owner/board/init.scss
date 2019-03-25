@@ -68,6 +68,10 @@
                         }
                     }
                     
+                    > * {
+                        word-break: break-word;
+                    }
+                    
                     //공지사항 자세히보기
                     &.read {
                         colgroup {
@@ -139,6 +143,9 @@
                 .table-row {
                     @include table-row;
                     border-bottom: 1px solid $bc-gray-4;
+                    > * {
+                        word-break: break-word;
+                    }
                     tr {
                         th {
                             text-align: center;
@@ -205,7 +212,6 @@
                                     }
                                     &.t-l > p {
                                         min-height: 115px;
-                                        word-break: break-word;
                                     }
                                 }
                             }

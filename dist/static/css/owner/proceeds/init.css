@@ -98,7 +98,7 @@
             background: #f8f8f8; }
           .contents .container .prc-sec .con-area .table-col .table-style tbody tr th, .contents .container .prc-sec .con-area .table-col .table-style tbody tr td {
             border-top: 1px solid #bcbcbc;
-            word-break: keep-all; }
+            word-break: break-all; }
             .contents .container .prc-sec .con-area .table-col .table-style tbody tr th a, .contents .container .prc-sec .con-area .table-col .table-style tbody tr td a {
               display: block;
               overflow: hidden;
