@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+//page-discount
+.contents {
+    .container {
+        padding: 0 0 110px;
+        //비주얼
+        .visual-area {
+            @include bx;
+            display: table;
+            width: 100%;
+            height: 450px;
+            text-align: center;
+            background: url(http://img.ramadapt.co.kr/owner/discount/sub_visual.jpg) no-repeat;
+            background-size: cover;
+            .visual-box {
+                display: table-cell;
+                vertical-align: middle;
+                color: #fff;
+                .con-tit {
+                    padding-top: 73px;
+                    font-size: 60px;
+                    line-height: 1;
+                }
+                p {
+                    font-weight: 300;
+                    line-height: 33px;
+                    &.p-0 {
+                        padding: 40px 0 66px;
+                        font-size: 25px;
+                    }
+                    &.p-1 {
+                        font-size: 16px;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        
+        //sub content
+        .con-area {
+            padding-top: 5px;
+            .group-area {
+                @include bx;
+                @include clearfix;
+                
+                .group-list {
+                    @include bx;
+                    float: left;
+                    width: 30%;
+                    margin: 72px 0 0 5%;
+                    
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    
+                    .tit-box {
+                        padding-left: 4px;
+                        .group-tit {
+                            font-size: 33px;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            letter-spacing: -2.3px;
+                        }
+                        .group-txt {
+                            span {
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 1;
+                                &.s-adr {
+                                    
+                                }
+                                &.s-grd {
+                                    padding-left: 10px;
+                                    color: #686868;
+                                }
+                            }
+                        }
+                    }
+                    .group-box {
+                        @include bx;
+                        margin: 33px 0 22px;
+                        border: 1px solid #dcdbd9;
+                        .type-adr {
+                            z-index: 1;
+                            @include btn-com($po : absolute, $wd : 74px, $he : 26px, $f-s : 14px, $bd-r : 4px);
+                            top: 16px;
+                            right: 20px;
+                        }
+                        
+                        .group-img {
+                            @include bx;
+                            img {
+                                position: relative;
+                                width: 100%;
+                            }
+                        }
+                        .txt-box {
+                            @include bx;
+                            height: 195px;
+                            padding: 25px 10px 22px 20px;
+                            p {
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 25px;
+                                letter-spacing: -0.7px;
+                                word-break: keep-all;
+                                &.p-txt {
+                                }
+                                &.p-adr {
+                                    //height: 50px;
+                                    margin-top: 22px;
+                                    color: #747272;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .btn-gold {
+                        @include btn-com($wd : 100%, $he : 60px);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+//ie8
+.ie8 .contents {
+    .container {
+        //sub content
+        .con-area {
+            .group-area {
+                .group-list {
+                    .tit-box {
+                        .group-tit {
+                            font-size: 31px;
+                            letter-spacing: -3.5px;
+                        }
+                    }
+                    .group-box {
+                        .txt-box {
+                            p {
+                                font-size: 17px;
+                                letter-spacing: -1.3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//safari
+.safari .contents {
+    .container {
+        //sub content
+        .con-area {
+            .group-area {
+                .group-list {
+                    .group-box {
+                        .txt-box {
+                            p {
+                                font-size: 17px;
+                                letter-spacing: -1.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

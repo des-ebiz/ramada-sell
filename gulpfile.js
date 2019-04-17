@@ -22,8 +22,8 @@ var del      = require('del'),
 	plumber  = require('gulp-plumber'),
 	watch    = require('gulp-watch'),
 	prettify = require('gulp-html-prettify'),
-	connect  = require('gulp-connect-multi')(),
-	preen		 = require('preen'),
+	//connect  = require('gulp-connect-multi')(),
+	//preen		 = require('preen'),
 	browerSync = require('browser-sync').create(), // browser-sync 호출
 
 	// 환경설정 ./config.js

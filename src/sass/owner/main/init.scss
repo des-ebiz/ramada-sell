@@ -76,7 +76,7 @@
                         .cm-t-deco {
                             font-size: inherit;
                             font-weight: 600;
-                            @include txt-gradient(#348483, #355f6b 10%, #41aab1 45%, #2d696c 100%);
+                            //@include txt-gradient(#348483, #355f6b 10%, #41aab1 45%, #2d696c 100%);
                         }
                         
                         &:before {
@@ -152,8 +152,8 @@
                 .login-cm-box {
                     .p-1 {
                         .cm-t-deco {
-                            background: none;
-                            color: #348483;
+                            /*background: none;
+                            color: #348483;*/
                         }
                         
                     }
