@@ -60,13 +60,6 @@
                             .in-txt {
                                 font-weight: 500;
                             }
-                            .p-box {
-                                .p-row {
-                                    .btn-more {
-                                        width: 100px;
-                                    }
-                                }
-                            }
                         }
                         
                         .btn-more {
@@ -74,10 +67,6 @@
                             top: 0;
                             right: 0;
                             @include btn-more;
-                            /* p-row 안으로 넣었을 경우 왼쪽 정렬을 위해 (추가서류 등록) */
-                            &.pl {
-                                position: relative;
-                            }
                         }
                     }
                 }
