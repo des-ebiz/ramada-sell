@@ -63,10 +63,14 @@
                         }
                         
                         .btn-more {
-                            @include btn-com($po : absolute, $wd : 66px, $he : 40px, $f-s : 17px, $f-c : $fc-black-1, $bd-w : 1px, $bd-c : $bc-black-1, $bd-r : $bd-r-0, $btn-bg : $bg-white-1);
+                            @include btn-com($po : absolute, $wd : 100px, $he : 40px, $f-s : 17px, $f-c : $fc-black-1, $bd-w : 1px, $bd-c : $bc-black-1, $bd-r : $bd-r-0, $btn-bg : $bg-white-1);
                             top: 0;
                             right: 0;
                             @include btn-more;
+                            /* p-row 안으로 넣었을 경우 왼쪽 정렬을 위해 (추가서류 등록) */
+                            &.pl {
+                                position: relative;
+                            }
                         }
                     }
                 }

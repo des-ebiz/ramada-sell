@@ -52,7 +52,7 @@
     border-radius: $bd-r;
     background: $btn-bg;
 }
-//btn more + > span 
+//btn more + > span  / btn rm - 
 @mixin btn-more($pm-l : 10px, $len-min : 1px, $len-max : 12px ,$bg : $bg-gray-6) {
     padding-left: ($pm-l/2);
     span {
@@ -70,6 +70,11 @@
             top: (($len-max/2)-1);
             left: -($len-max/2);
             background: $bg;
+        }
+    }
+    &.btn-rm {
+        span {
+            background: none;
         }
     }
 }
