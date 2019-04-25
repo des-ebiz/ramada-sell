@@ -478,6 +478,27 @@
                 .w-half {margin-top: 13px;}
             }
             
+            //주민등록 박스
+            &.reg-box {
+                span {
+                    float: left;
+                    display: inline-block;
+                    width: 5%;
+                    line-height: 48px;
+                    text-align: center;
+                }
+                .in-txt {
+                    float: left;
+                    width: 40%;
+                    &.w-third {
+                        width: 55%;
+                    }
+                    &.in-txt + .in-txt {
+                        float: right;
+                    }
+                }            
+            }
+            
             //file box
             &.file-box {
                 .in-txt[type="file"] {

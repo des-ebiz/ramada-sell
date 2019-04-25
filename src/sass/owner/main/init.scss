@@ -45,7 +45,7 @@
                     .btn-sign {
                         @include btn-com($wd : auto, $he : 36px, $pd : 0 5px, $f-s : 18px, $f-c : $fc-gray-6, $bd-c : $bc-gray-1, $bd-r : $bd-r-0, $btn-bg : $bg-white-1);
                         border-bottom-width: 1px;
-                        margin: 90px auto 0;
+                        margin: 70px auto 0;
                         &.ic-rArrow {
                             &:after {
                                 width: 8px;
