@@ -3,7 +3,7 @@
 // common
 @import "../parts/common";
 
-//page-tax
+//page-tax - 제거예정
 .contents {
     .container {
         padding: 60px 0 130px;
@@ -85,6 +85,299 @@
     }
 }
 
+// 여기까지 제거예정 //
+
+//page-tax
+.contents {
+    .container {
+        padding-bottom: 0;
+        @include tab-base;
+        .tab-area {
+            margin-bottom: 0;
+        }
+        
+        .con-sec {
+            .con-tit {
+                padding-top: 50px;
+            }
+            
+            .con-area {
+                margin-top: 70px;
+                .tax-area {
+                    @include bx;
+                    @include clearfix;
+                }
+            }
+            
+            /* 전자세금계산서 */
+            &.sec-cal {
+                .con-area { 
+                    .tax-area {
+                        padding-bottom: 85px;
+                        border-bottom: 1px solid $bc-gray-1;
+                        .tax-tbl-box {
+                            @include bx;
+                            @include clearfix;
+                            width: 50%;
+
+                            //table row
+                            .table-row {
+                                @include table-row(18px, 15px, $th-pd : 15px 15px 14px, $td-pd : 15px 10px 14px, $bt-w : 0, $w-th : auto);
+                                .table-style {
+                                    colgroup {
+                                        .nth-1 {
+                                            width: 36%;
+                                        }
+                                        .nth-2 {
+                                            width: 50%;
+                                        }
+                                        .nth-3 {
+                                            width: 14%; 
+                                        }
+                                    }
+                                    tr {
+                                        border: 0;
+                                        th, td {
+                                            height: 50px;
+                                            border-bottom: 1px solid;
+                                        }
+                                        td {
+                                            .td-txt {
+                                                position: relative;
+                                                .txt-mail {
+                                                    position: absolute;
+                                                    display: block;
+                                                    top: 0;
+                                                    right: 0;
+                                                    font-weight: 500;
+                                                    letter-spacing: -1.3px;
+                                                    text-align: right;
+                                                    color: #810000;
+                                                }
+                                            }
+                                        }
+
+                                        .bg-y {
+                                            background: $bg-yellow-3 !important;
+                                        }
+
+                                        &:first-child {
+                                            th {
+                                                padding: 0 10px;
+                                                text-align: center;
+                                                .lbl {
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                        }
+
+                                        &.tr-li-1 {
+                                            th, td {
+                                                height: 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.tbl-left {
+                                float: left;
+                                .table-row {
+                                    border-top: 2px solid #e65662;
+                                    .table-style {
+                                        tr {
+                                            th, td {
+                                                border-bottom-color: $bc-red-1;
+                                            }
+                                            th {
+                                                color: #810000;
+                                                background: #fdf7f7;
+                                            }
+                                            td {
+                                                border-left: 1px solid $bc-red-1;
+                                                color: #bd3641;
+                                            }
+                                            &:first-child {
+                                                th {
+                                                    background: #ffdbdd;
+                                                    border-bottom-color: #ffdbdd;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.tbl-right {
+                                float: right;
+                                .table-row {
+                                    border-top: 2px solid #353535;
+                                    .table-style {
+                                        tr {
+                                            th, td {
+                                                border-bottom-color: $bc-gray-1 !important;
+                                            }
+                                            th {
+                                                color: $fc-black-1;
+                                                background: $bg-gray-3;
+                                            }
+                                            td {
+                                                border-left: 1px solid $bc-gray-1;
+                                                color: $fc-black-1;
+                                            }
+                                            &:first-child {
+                                                th {
+                                                    color: #fff;
+                                                    background: #292929;
+                                                    border-bottom-color: #292929;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+            /* 전송메일 */
+            &.sec-mail {
+                .con-area {
+                    padding-bottom: 70px;
+                    .tax-area {
+                        padding-bottom: 65px;
+                        text-align: center;
+                        border-bottom: 1px solid $bc-gray-1;
+                        .p-0 {
+                            font-size: 21px;
+                            line-height: 40px;
+                            span {
+                                border-bottom: 1px solid #7f7f7f;
+                            }
+                        }
+                        .mail-box {
+                            display: inline-block;
+                            height: 74px;
+                            margin-top: 38px;
+                            padding: 0 10px;
+                            font-size: 51px;
+                            line-height: 74px;
+                            em {
+                                font-weight: bold;
+                                letter-spacing: -1px;
+                            }
+                            background: $bg-yellow-3;
+                        }
+                    }
+                    
+                    .info-box {
+                        margin-top: 40px;
+                    }
+                } 
+            }
+            
+            /* 발행안내 */
+            &.sec-info {
+                padding-top: 30px;
+                background: $bg-gray-3;
+                .con-area {
+                    padding-bottom: 175px;
+                    .tax-area {
+                        .tax-info-list {
+                            li {
+                                margin-top: 85px;
+                                text-align: center;
+                                .t-num {
+                                    span {
+                                        display: inline-block;
+                                        height: 58px;
+                                        padding: 0 13px;
+                                        font-size: 35px;
+                                        line-height: 58px;
+                                        color: #fff;
+                                        border-radius: 12px;
+                                        background: $bg-black-2;
+                                    }
+                                    
+                                }
+                                .t-txt {
+                                    padding: 31px 0 44px;
+                                    font-size: 35px;
+                                }
+                                .t-img {
+                                    img {
+                                        
+                                    }
+                                }
+                                &:first-child {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ie8 */
+
+//page-tax
+.ie8 .contents {
+    .container {
+        .con-sec {
+            
+            .con-area {
+                margin-top: 70px;
+                .tax-area {
+                    @include bx;
+                    @include clearfix;
+                    .tax-tbl-box {
+                        .table-row {
+                            tr {
+                                th, td {
+                                    letter-spacing: -1.1px;
+                                }
+                                th {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            /* 전자세금계산서 */
+            &.sec-cal {
+                .con-area { 
+                    .tax-area {
+                        .tax-tbl-box {
+                            //table row
+                            .table-row {
+                                .table-style {
+                                    tr {
+                                        td {
+                                            .td-txt {
+                                                .txt-mail {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
 
 
 

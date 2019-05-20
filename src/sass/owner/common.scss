@@ -426,6 +426,17 @@ body {
                     }
                 }
             }
+            /* info box */
+            .info-box {
+                .bul-txt {
+                    .info-list {
+                        > li {
+                            font-size: 16px;
+                            letter-spacing: -1.3px;
+                        }
+                    }
+                }
+            }
             .d-chk {
                 > p {
                     @include chk-box-ie;
@@ -481,6 +492,27 @@ body {
         .row {
             .lbl {
                 letter-spacing: -1px;
+            }
+        }
+    }
+    
+    /* contents */
+    .contents {
+
+        //서브페이지 공통
+        .container {
+            //콘텐츠
+            .con-area {
+                /* info box */
+                .info-box {
+                    .bul-txt {
+                        .info-list {
+                            > li {
+                                letter-spacing: -1.3px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

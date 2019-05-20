@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+//page-tax
+.contents {
+    .container {
+        padding: 60px 0 130px;
+        
+        //sub content
+        .con-area {
+            margin-top: 76px;
+            .tax-area {
+                //table row
+                .table-row {
+                    @include table-row($f-s : 15px, $td-f-s : 15px, $th-pd : 11px 34px 10px 35px, $td-pd : 11px 32px 10px, $bb-c : $bc-gray-1, $w-th : 215px);
+                    th > .lbl {
+                        font-weight: 500;
+                    }
+                }
+            }
+            .info-box {
+                margin-top: 40px;
+            }
+            .btn-box {
+                margin-top: 75px;
+                .btn-gold {
+                    width: 315px;
+                }
+            }
+        }
+    }
+    
+}
+
+/* 팝업 */
+/* 전자 세금계산서 발급용 사업자등록증 팝업 */
+#pop_bcr.pop-wrap {
+    .pop-container {
+        .pop-con {
+            padding: 36px 35px 33px;
+            .pop-img {
+                width: 730px;
+            }  
+            .btn-box {
+                a {
+                    width: 260px;
+                    height: 60px;
+                }
+            }
+        }
+        
+    }
+}
+/* 전자 세금계산서 전송 메일 팝업 */
+#pop_mail.pop-wrap {
+    .pop-container {
+        .pop-con {
+            width: 620px;
+            padding: 57px 25px 50px;
+            .p-0 {
+                padding-bottom: 40px;
+            }
+            
+            .mail-box{
+                @include b-tb($bb-w : 2px, $bt-c : $bc-gray-6, $bb-c : $bc-gray-7);
+                padding: 35px 0 37px;
+                * {
+                    font-weight: 600;
+                }
+                .mail-txt {
+                    font-size: 29px;
+                }
+                .p-1 {
+                    margin-top: 12px;
+                    color: $fc-red-1;
+                }
+            }
+            
+            .info-box {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
