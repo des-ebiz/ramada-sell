@@ -144,13 +144,16 @@ body {
         @include bx;
         @include clearfix;
         z-index: 99;
+        text-align: center;
         background: $bg-red-1;
         .menu {
-            @include centerThis;
+            @include bx;
             @include clearfix;
+            display: inline-block;
             li[class*='item-'] {
                 @include float;
-                width: (100%/5);
+                //width: (100%/5);
+                width: 200px;
                 text-align: center;
                 a {
                     @include bx;
