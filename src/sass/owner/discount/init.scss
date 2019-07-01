@@ -122,6 +122,10 @@
                     .btn-gold {
                         @include btn-com($wd : 100%, $he : 60px);
                     }
+                    
+                    .btn-gray {
+                        @include btn-com($wd : 100%, $he : 60px, $btn-bg : #a3a19f);
+                    }
                 }
             }
         }
